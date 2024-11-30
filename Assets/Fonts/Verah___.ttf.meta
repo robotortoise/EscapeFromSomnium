@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 313ba1a2b625e8c448379e50af86c29c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Vera Humana 95
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e23eb81912fc9b94097998dd92445710, type: 3}
+  - {fileID: 12800000, guid: fadc0b69a7fa0e8428659897b93fb4e9, type: 3}
+  - {fileID: 12800000, guid: e5d6a1022048e98478cd6141952ce8f8, type: 3}
+  - {fileID: 12800000, guid: b0a769c4c6f4f2246ae0b16f2f8d162e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: uiandscripts
+  assetBundleVariant: 

@@ -1,0 +1,18 @@
+Building Escape From Somnium for Unity:
+
+
+Random-ass notes: 
+Managed stripping level under player settings is set to “low”
+
+
+For Windows:
+Set the talk sounds for Date, Sipher, and Rabura to their appropriate numbers in the character resources.
+Date: 999talk_10
+Rabura:999talk_2
+Sipher: 999talk_3
+
+For HTML5/WebGL: 
+Set the talk sounds to the “WebGL” talk sounds in the character resources.
+Date: 999TalkDate_10
+Rabura: 999TalkRabura_2
+Sipher: 999TalkSipher_3
