@@ -1,0 +1,429 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06386b10f29c770408fc88b031c4d7fd, type: 3}
+  m_Name: EditorResources
+  m_EditorClassIdentifier: 
+  resourceCategories:
+  - Id: TextPrinters/af65cbe0-461b-43f2-9a38-d854b704811c
+    Resources:
+    - name: Dialogue
+      pathPrefix: TextPrinters
+      guid: 1bc08ccd31adff6439e97161aa6e1d8b
+  - Id: TextPrinters/32ade798-a784-49a3-99ac-d23f97c4a8cb
+    Resources:
+    - name: Fullscreen
+      pathPrefix: TextPrinters
+      guid: c87cebd3f0d4f174789cd351ce9591c4
+  - Id: TextPrinters/5fa85a9f-acd1-48d6-a8f1-b05aaf1fa7e3
+    Resources:
+    - name: Wide
+      pathPrefix: TextPrinters
+      guid: 781828b806deb1e4cbf50ef9de41da10
+  - Id: TextPrinters/b8eadc85-465e-453e-aa7d-d77b3cefac57
+    Resources:
+    - name: Chat
+      pathPrefix: TextPrinters
+      guid: 6f9836a3c4f777741b1962979d97e485
+  - Id: TextPrinters/b272a9de-ddc4-4545-b679-5598e28b0579
+    Resources:
+    - name: Bubble
+      pathPrefix: TextPrinters
+      guid: b47d9659b2be5ee4e95a776f213c9d4b
+  - Id: ChoiceHandlers/9c2e90ae-c651-423d-8b7d-ee5317a294f9
+    Resources:
+    - name: ButtonList
+      pathPrefix: ChoiceHandlers
+      guid: 1f6aa29000e839c409e6a9c0704adc96
+  - Id: ChoiceHandlers/542cf420-a22d-4468-878e-2160be0a20cc
+    Resources:
+    - name: ButtonArea
+      pathPrefix: ChoiceHandlers
+      guid: 4fa6d62f894ae6e4698bfa8af59e7942
+  - Id: ChoiceHandlers/02ec462a-edf4-4fa9-b2af-f45cc5465b55
+    Resources:
+    - name: ChatReply
+      pathPrefix: ChoiceHandlers
+      guid: 0e61df696cabbea448510879ee732b00
+  - Id: Spawn
+    Resources:
+    - name: Animate
+      pathPrefix: Spawn
+      guid: 7bf06fa813bb9c34daf521998fa72ab1
+    - name: DepthOfField
+      pathPrefix: Spawn
+      guid: ea76638b26a915946b62907dd1e776fd
+    - name: DigitalGlitch
+      pathPrefix: Spawn
+      guid: be75a73ecccb90b4caa5c14edb9ac467
+    - name: Rain
+      pathPrefix: Spawn
+      guid: a9117e2fa90704d45b3e1461596c11ee
+    - name: ShakeBackground
+      pathPrefix: Spawn
+      guid: 9f56c556ba32fd54fae62347c25a8145
+    - name: ShakeCamera
+      pathPrefix: Spawn
+      guid: 1c5b86cf3cfbb1f44ae5641699077da4
+    - name: ShakeCharacter
+      pathPrefix: Spawn
+      guid: 1224d69e1592d624cbde93d0f7383d91
+    - name: ShakePrinter
+      pathPrefix: Spawn
+      guid: 2795040988e866646801c80024c50be1
+    - name: Snow
+      pathPrefix: Spawn
+      guid: 9f4e71cb27fffa04486737d2cf8d622d
+    - name: SunShafts
+      pathPrefix: Spawn
+      guid: c4bf810b9b6cc9f44a58fd670678ded4
+    - name: Blur
+      pathPrefix: Spawn
+      guid: e466d9326b30a4b49a3dad428b4d9968
+  - Id: UI
+    Resources:
+    - name: ClickThroughPanel
+      pathPrefix: UI
+      guid: 702c32b2de0c0784b9a66ec90601874f
+    - name: BacklogUI
+      pathPrefix: UI
+      guid: 3b48877ce282b1f40940f4d35a4b1924
+    - name: CGGalleryUI
+      pathPrefix: UI
+      guid: 71da50c8dae82bd42ba67528804e820c
+    - name: ConfirmationUI
+      pathPrefix: UI
+      guid: 88d03f19bcbff914ba33a7c9895e2d7c
+    - name: ContinueInputUI
+      pathPrefix: UI
+      guid: 1add671f8348e8443bcc56290e82fc5e
+    - name: ExternalScriptsUI
+      pathPrefix: UI
+      guid: 671ceb4f549ddf046913d7debf113469
+    - name: LoadingUI
+      pathPrefix: UI
+      guid: 53aad00e5cf184e458adb001c550518a
+    - name: MovieUI
+      pathPrefix: UI
+      guid: f9a211517d1cb1a44964dc2254463049
+    - name: RollbackUI
+      pathPrefix: UI
+      guid: a32c73a3aff4b274c85b3ff16c854b07
+    - name: SaveLoadUI
+      pathPrefix: UI
+      guid: 8d53726b3d08433479398f02b4780e7f
+    - name: SceneTransitionUI
+      pathPrefix: UI
+      guid: e3b234b4273b7f64ab3f1d9fe425ed23
+    - name: SettingsUI
+      pathPrefix: UI
+      guid: 65c37f59e9b266f468dd5381fdc03fc3
+    - name: TipsUI
+      pathPrefix: UI
+      guid: f5aae572225ee1b4c96d1a17fc5cb073
+    - name: TitleUI
+      pathPrefix: UI
+      guid: 3725734f3d3a6b442ad5b431b689e0ee
+    - name: VariableInputUI
+      pathPrefix: UI
+      guid: bb95f484e341dcd4391a572f22b7d067
+    - name: PauseUI
+      pathPrefix: UI
+      guid: 480f5db62ea305c46b89a86496d2a0c9
+    - name: ToastUI
+      pathPrefix: UI
+      guid: dd85ce99288c2f8488447fa511b1c0d6
+    - name: ScriptNavigatorUI
+      pathPrefix: UI
+      guid: 735d6aa767879aa469134858c5b2f0a7
+  - Id: Scripts
+    Resources:
+    - name: ScriptBody
+      pathPrefix: Scripts
+      guid: 8ef1ea8823e78114fa7b8619229eb836
+    - name: ScriptEnding
+      pathPrefix: Scripts
+      guid: 4bd0647d7cca3c34d90c2dd023af84b9
+    - name: TitleScriptLoader
+      pathPrefix: Scripts
+      guid: 11a2f6113e869784bbd82cb5528f8fc2
+  - Id: Backgrounds/34780d51-03d4-4bd7-9c54-b6d0efdcabc3
+    Resources:
+    - name: MainBackground
+      pathPrefix: Backgrounds
+      guid: e9eca0b0d2d4e9540b07c8425219e9cd
+  - Id: Audio
+    Resources:
+    - name: distant-machine
+      pathPrefix: Audio
+      guid: db6162c7ed11363448bbaa3471b2de7a
+    - name: SomniumFiles_Heartbeat
+      pathPrefix: Audio
+      guid: f33908efc61925a409a6d0e83dfb759a
+    - name: industrial-drone
+      pathPrefix: Audio
+      guid: 16c73480449b5a04581609c4a451ce65
+    - name: DateKickWall
+      pathPrefix: Audio
+      guid: 3415c7b2b6d3cf94d9dd1e6ace141a34
+    - name: DatePunchWall
+      pathPrefix: Audio
+      guid: 2a8f82e0a2ee05d44897af06b7f7e582
+    - name: SoloThreeFootsteps
+      pathPrefix: Audio
+      guid: b52a836d2de783f4f93dc69e8737e797
+    - name: RunGroupFootsteps
+      pathPrefix: Audio
+      guid: efec00ef591ab1644a5b40a79363d929
+    - name: Mucin
+      pathPrefix: Audio
+      guid: ef3050bf85cca8c418e3e8a08652bd77
+    - name: Zipper
+      pathPrefix: Audio
+      guid: cc435be2eb1176e469dd46ddd3eb2bca
+    - name: Radio3
+      pathPrefix: Audio
+      guid: 65a7c7eebd8cbd84598b51f53267fdd0
+    - name: Radio5
+      pathPrefix: Audio
+      guid: 36f62c6313024ff45b3e9588908de4cb
+    - name: Device4
+      pathPrefix: Audio
+      guid: 9cd69db467866ec4f80ab375e18a0f8b
+    - name: DoorFan
+      pathPrefix: Audio
+      guid: 4b35ed601fa248747871a25305ea83da
+    - name: MachineGun
+      pathPrefix: Audio
+      guid: ceebddbf9eadfef43a76aad3485f6ac8
+    - name: Impact
+      pathPrefix: Audio
+      guid: 60043a87d95cc564d81944fdd2e0ce95
+    - name: CardPull
+      pathPrefix: Audio
+      guid: d478cb974c2252f47b1f282c7ee02d54
+    - name: Clink
+      pathPrefix: Audio
+      guid: 9b0f359415007ed48848f75bfee3699c
+    - name: Bleep8
+      pathPrefix: Audio
+      guid: fe91fa864b2991d44b387718255da49d
+    - name: Bleep1
+      pathPrefix: Audio
+      guid: 7766bbd0d0f52e845a0e763b24725f1e
+    - name: VLR_Sigma_Voice_NoiseReduced
+      pathPrefix: Audio
+      guid: ed73b615dd11098459a3ece54405a2c3
+    - name: Pepsiman_pshaw
+      pathPrefix: Audio
+      guid: c8d79845381fb3048862543b1cee8c35
+    - name: radio_char_talk
+      pathPrefix: Audio
+      guid: 4c2987c140dac4a4b85642f1875822fb
+    - name: BreadCrunch
+      pathPrefix: Audio
+      guid: 50f445a8a2519bc4aade91e7352e1623
+    - name: ClothesRustle
+      pathPrefix: Audio
+      guid: 9584875b2fae4ef4a8b7121824f4fc5d
+    - name: ZE_PersistentOminousness_loop
+      pathPrefix: Audio
+      guid: 8360a3221ca9ad14bbdc78dc5776819c
+    - name: ZE_PersistentOminousness_start
+      pathPrefix: Audio
+      guid: 60dd5be47a5e36c4cbb5c873bed3925f
+    - name: ZE_MartianIsolation_start
+      pathPrefix: Audio
+      guid: 80f4d9a0860c79d40a85024879b868c2
+    - name: ZE_MartianIsolation_loop
+      pathPrefix: Audio
+      guid: bea0cd4a7eec6c641a952c8b832a3056
+    - name: AITSF_tenkai_start
+      pathPrefix: Audio
+      guid: ffecc79a4e7b3aa478b9305144086660
+    - name: AITSF_tenkai_loop
+      pathPrefix: Audio
+      guid: 9e2c9fe321049fd4ba6fdeccd2a03ab3
+    - name: AITSF_yakusai_start
+      pathPrefix: Audio
+      guid: 4d73f9edc715d354584c1adc476ee16d
+    - name: AITSF_yakusai_loop
+      pathPrefix: Audio
+      guid: de0bba75be8eca342870e4582c0273d9
+    - name: AITSF_OffTheRecord_loop
+      pathPrefix: Audio
+      guid: 47bd9a87115297845bd5d60a3db43956
+    - name: AITSF_OffTheRecord_start
+      pathPrefix: Audio
+      guid: 5a639363e2bfaf24b8c53cb7e8e9f898
+    - name: ZE_ExtremeExtrication_all
+      pathPrefix: Audio
+      guid: d6d0f905d1236bf46ae3b73abc5628dd
+    - name: AITSF_ArcaneIncantation_loop
+      pathPrefix: Audio
+      guid: ac8d59963663c48439448a1b1d7a96fa
+    - name: AITSF_ArcaneIncantation_start
+      pathPrefix: Audio
+      guid: 9aa59e052e739f64c9d4d30c223344de
+    - name: ZE_ErstwhilePlacidity_loop
+      pathPrefix: Audio
+      guid: 359a501abfe7b3042992621ea3fb20c0
+    - name: ZE_ErstwhilePlacidity_start
+      pathPrefix: Audio
+      guid: abeaa3555c89bef42b22d278ffb8868a
+    - name: Pepsiman_loop
+      pathPrefix: Audio
+      guid: b309bbb48eaaf54419aefb8d66f1eaf9
+    - name: Pepsiman_start
+      pathPrefix: Audio
+      guid: 0fc63567a8352274ebb4cd9543dbcc7c
+    - name: ZE_anxiousness_start
+      pathPrefix: Audio
+      guid: 7d3b62a4b216bf94b8e1786b3d9432ee
+    - name: ZE_anxiousness_loop
+      pathPrefix: Audio
+      guid: bc8f0c435ade9aa408b1983940b40f82
+    - name: ZE_MorphogeneticSorrow_all
+      pathPrefix: Audio
+      guid: 15578911116ae6e4b8880d2d17c750a8
+    - name: AITSF_syuurai_loop
+      pathPrefix: Audio
+      guid: c6a85c240e77b2045bca67bbce44fb1f
+    - name: AITSF_syuurai_start
+      pathPrefix: Audio
+      guid: 51cd9a285bd85024dacfbcf26797cf6c
+    - name: Pepsiman_credits
+      pathPrefix: Audio
+      guid: 150ad0a472f30474790cc49c71ef0269
+    - name: 999talk_2
+      pathPrefix: Audio
+      guid: fd6a8470121490f4389d5ab1c791f7c9
+    - name: 999talk_3
+      pathPrefix: Audio
+      guid: b056453e49b6c3041b79ca55167109c4
+    - name: 999talk_10
+      pathPrefix: Audio
+      guid: f8acb5eef8d53a341ada1e99630c7b27
+    - name: 999TalkDate_WebGL
+      pathPrefix: Audio
+      guid: aef6dfbc52b898e429e8d59aaeb2a472
+    - name: 999TalkRabura_WebGL
+      pathPrefix: Audio
+      guid: cf1d4a90d6750dd4598c8d7e43ff3385
+    - name: 999TalkSipher_WebGL
+      pathPrefix: Audio
+      guid: bd75c6b3d3e64444aacacc81db9c7fbb
+  - Id: CharacterAvatars
+    Resources: []
+  - Id: Characters/04610d3f-c95d-4a4e-aab9-fa048fad7c1d
+    Resources:
+    - name: SigmaTransparency
+      pathPrefix: Characters/Sigma
+      guid: a0b7eb467d36c0a40af8b539099dbbcf
+  - Id: TextPrinters/3fc2e270-bc84-475c-82a4-161aa6f62e19
+    Resources:
+    - name: AnimatedTextPrinter
+      pathPrefix: TextPrinters
+      guid: 9dc97b03b352fd14281f77c533b4401a
+  - Id: Characters/2f8569df-5084-40d1-a9ff-861914105e05
+    Resources:
+    - name: Date
+      pathPrefix: Characters
+      guid: a74ef49c1b03cdf4aa285ba884fb9ecd
+  - Id: Characters/e3c22732-bac9-411f-b4cf-bb6dd4df9811
+    Resources:
+    - name: Pepsiman
+      pathPrefix: Characters
+      guid: 0cd111c8246a21149b856f512d06d797
+  - Id: Characters/2fcea4c8-b0ac-42c3-905c-577d6027a82b
+    Resources:
+    - name: Rabura
+      pathPrefix: Characters
+      guid: 28f3f2831da7e5a48b807399b0414a10
+  - Id: Characters/d7b0be36-bcdf-42ad-a466-9289390fa9de
+    Resources:
+    - name: Sipher
+      pathPrefix: Characters
+      guid: fa281d666ca1a5e42bcd114984915d9d
+  - Id: Backgrounds/5c163d60-5e54-4ce3-bf3d-2f872b859958
+    Resources:
+    - name: MonitorOnAndDim
+      pathPrefix: Backgrounds
+      guid: 946a93d6ab4c3764da5362d59e714879
+  - Id: Backgrounds/b5df4663-20fc-4d60-90fd-b0d7bb2be347
+    Resources:
+    - name: SigmaArm
+      pathPrefix: Backgrounds
+      guid: 3c6423b58e48b3445ab32228e68867c2
+  - Id: Backgrounds/526fae5d-4333-4c4a-90b3-e38306fcf976
+    Resources:
+    - name: MonitorOnZoom
+      pathPrefix: Backgrounds
+      guid: 07b63a59185cc894b84dba275b1daaf2
+  - Id: Backgrounds/f7b257ac-a3d1-4ced-b0b5-4c76484a8e47
+    Resources:
+    - name: MonitorOffAndDim
+      pathPrefix: Backgrounds
+      guid: 2345c856a5d61a841a250cdace674132
+  - Id: Backgrounds/34963c5f-6036-42cf-aa06-7b714d0a6914
+    Resources:
+    - name: SigmaWake
+      pathPrefix: Backgrounds/SigmaWake
+      guid: 1d70dc26fca51f449a6b73e06c752a2f
+  - Id: Movies
+    Resources: []
+  - Id: Backgrounds/335f359a-4acf-4e4f-b2d4-0cb997ed33f5
+    Resources:
+    - name: SigmaWakes
+      pathPrefix: Backgrounds
+      guid: f6cd6fd2e9db9d045b52dbb3e2fb9773
+  - Id: Backgrounds/a0906767-dfaf-4f5d-8c5e-f3d85764ef7a
+    Resources:
+    - name: ToasterLightOn
+      pathPrefix: Backgrounds
+      guid: 7a0510e8eca944949a939af0233ee0fe
+  - Id: Backgrounds/e8c2e670-0d7a-4e67-9463-09cc1e42c3d2
+    Resources:
+    - name: FullyDark
+      pathPrefix: Backgrounds
+      guid: 5b0559c054c71cf4087595d3ddf44907
+  - Id: Backgrounds/9ded0a61-eecd-45ca-bfc3-13bf7c08d9ea
+    Resources:
+    - name: PepsimanSpotlight
+      pathPrefix: Backgrounds
+      guid: 4fdc01efbde47274087ad3ac64cc0abe
+  - Id: Backgrounds/e80b15ff-1b79-4c0f-a82b-b532418dd0e6
+    Resources:
+    - name: AllLightsOn
+      pathPrefix: Backgrounds
+      guid: 9e80d42bb2450564a936007578208634
+  - Id: Characters/80ebb1d3-e476-4f9b-ba5e-c776cd5460ed
+    Resources:
+    - name: RaburaFullBody
+      pathPrefix: Characters
+      guid: d951a1246e1eabe4ab6b4383b8fbd208
+  - Id: Backgrounds/d2215d87-e1fc-4e91-8269-c1d1117f5221
+    Resources:
+    - name: BGTwitter
+      pathPrefix: Backgrounds
+      guid: 33a60cdb5296a984382adb36f76802d4
+  - Id: Unlockables
+    Resources: []
+  - Id: Backgrounds/8d99da47-069b-4ba6-8d7a-8f0ad37bd73e
+    Resources:
+    - name: BGTitle
+      pathPrefix: Backgrounds
+      guid: a824b0158a0794a46a80bb83b6c6c75e
+  - Id: Backgrounds/88963566-84c5-4492-bf96-eef4b82f4bf1
+    Resources:
+    - name: AllLightsOnBG
+      pathPrefix: Backgrounds
+      guid: 9e80d42bb2450564a936007578208634

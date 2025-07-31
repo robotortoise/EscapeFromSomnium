@@ -1,0 +1,634 @@
+fileFormatVersion: 2
+guid: 470cc9beb9b481f458dc23c1f82306f3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: backgrounds
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 1
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 0
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: Date Test Unity_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 2102
+      height: 7157
+    spriteID: 7a659c0917011ff4380be4ffc37d6a2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: SpotlightOff
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1087
+      y: 15135
+      width: 0
+      height: 0
+    spriteID: a251493569da1cf49b5a46bed6f92e4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -2753, y: 12975}
+    spritePosition: {x: 3840, y: 2160}
+  - name: SpotlightOn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3843
+      y: 1
+      width: 1754
+      height: 1616
+    spriteID: 7d4ab00ad9562c341a7773a38fa79466
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3843, y: 1}
+    spritePosition: {x: 1352, y: 544}
+  - name: MonitorGlowOff
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1089
+      y: 15135
+      width: 0
+      height: 0
+    spriteID: 04316d9b6e95fae41aac4010f235b4db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -2751, y: 12975}
+    spritePosition: {x: 3840, y: 2160}
+  - name: MonitorGlowOn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 717
+      y: 15135
+      width: 368
+      height: 290
+    spriteID: e51f43d7dcd0776448339f97db6c4acb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 717, y: 15135}
+    spritePosition: {x: 2696, y: 697}
+  - name: KeyboardGlowOff
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1091
+      y: 15135
+      width: 0
+      height: 0
+    spriteID: d2959546155210d4aadee746c63f3599
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -2749, y: 12975}
+    spritePosition: {x: 3840, y: 2160}
+  - name: KeyboardGlowOn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 15135
+      width: 714
+      height: 428
+    spriteID: 759a8f1ecbbf28441b23a29b9b7c42e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 15135}
+    spritePosition: {x: 2392, y: 544}
+  - name: FullyDark
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 3840
+      height: 2160
+    spriteID: 5f0690b43f1292546a98f8f43c16adcd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 1}
+    spritePosition: {x: 0, y: 0}
+  - name: DimLightingMonitorOff
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 2163
+      width: 3840
+      height: 2160
+    spriteID: 78043a68002cc184d90de1a95c1f7696
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 2163}
+    spritePosition: {x: 0, y: 0}
+  - name: DimLightingMonitorOn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 4325
+      width: 3840
+      height: 2160
+    spriteID: 4b40d2d4749111945a2e508354bd445d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 4325}
+    spritePosition: {x: 0, y: 0}
+  - name: SomeLightingMonitorOn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 6487
+      width: 3840
+      height: 2160
+    spriteID: dbfb7d5a56db2214d8aa4833bc400e5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 6487}
+    spritePosition: {x: 0, y: 0}
+  - name: GalleryLightMonitorOn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 8649
+      width: 3840
+      height: 2160
+    spriteID: 68446abbb70383845a72cb14bbb46212
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 8649}
+    spritePosition: {x: 0, y: 0}
+  - name: DimLightingSpotlight_MonitorOn
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 10811
+      width: 3840
+      height: 2160
+    spriteID: 459101c1cd65ba2409a3878860144557
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 10811}
+    spritePosition: {x: 0, y: 0}
+  - name: AllLightsOn_MonitorOff
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 12973
+      width: 3840
+      height: 2160
+    spriteID: db58c886f7a4d3f43912f298ec25584e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1, y: 12973}
+    spritePosition: {x: 0, y: 0}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 1
+  layerMappingOption: 0
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 1
+  spriteSizeExpand: 0
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Spotlight
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 9439c16f250305944acdb6d6986058de
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: SpotlightOff
+    spriteName: SpotlightOff
+    isGroup: 0
+    parentIndex: 0
+    spriteID: a251493569da1cf49b5a46bed6f92e4f
+    layerID: 0
+    mosaicPosition: {x: 1087, y: 15135}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: SpotlightOn
+    spriteName: SpotlightOn
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7d4ab00ad9562c341a7773a38fa79466
+    layerID: 0
+    mosaicPosition: {x: 3843, y: 1}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: Monitor
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: f7bf5ede002598a4db3e0763586311df
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: MonitorGlowOff
+    spriteName: MonitorGlowOff
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 04316d9b6e95fae41aac4010f235b4db
+    layerID: 0
+    mosaicPosition: {x: 1089, y: 15135}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MonitorGlowOn
+    spriteName: MonitorGlowOn
+    isGroup: 0
+    parentIndex: 3
+    spriteID: e51f43d7dcd0776448339f97db6c4acb
+    layerID: 0
+    mosaicPosition: {x: 717, y: 15135}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: Keyboard
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: dd5bc462b56bfef44bd496d05c3db16a
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: KeyboardGlowOff
+    spriteName: KeyboardGlowOff
+    isGroup: 0
+    parentIndex: 6
+    spriteID: d2959546155210d4aadee746c63f3599
+    layerID: 0
+    mosaicPosition: {x: 1091, y: 15135}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: KeyboardGlowOn
+    spriteName: KeyboardGlowOn
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 759a8f1ecbbf28441b23a29b9b7c42e6
+    layerID: 0
+    mosaicPosition: {x: 1, y: 15135}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: BackingLayerToggle
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: f0e89ee3b3640d340aa058bff949cd8b
+    layerID: 0
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: FullyDark
+    spriteName: FullyDark
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 5f0690b43f1292546a98f8f43c16adcd
+    layerID: 0
+    mosaicPosition: {x: 1, y: 1}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DimLightingMonitorOff
+    spriteName: DimLightingMonitorOff
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 78043a68002cc184d90de1a95c1f7696
+    layerID: 0
+    mosaicPosition: {x: 1, y: 2163}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: DimLightingMonitorOn
+    spriteName: DimLightingMonitorOn
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 4b40d2d4749111945a2e508354bd445d
+    layerID: 0
+    mosaicPosition: {x: 1, y: 4325}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: SomeLightingMonitorOn
+    spriteName: SomeLightingMonitorOn
+    isGroup: 0
+    parentIndex: 9
+    spriteID: dbfb7d5a56db2214d8aa4833bc400e5a
+    layerID: 0
+    mosaicPosition: {x: 1, y: 6487}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: GalleryLightMonitorOn
+    spriteName: GalleryLightMonitorOn
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 68446abbb70383845a72cb14bbb46212
+    layerID: 0
+    mosaicPosition: {x: 1, y: 8649}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: DimLightingSpotlight_MonitorOn
+    spriteName: DimLightingSpotlight_MonitorOn
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 459101c1cd65ba2409a3878860144557
+    layerID: 0
+    mosaicPosition: {x: 1, y: 10811}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: AllLightsOn_MonitorOff
+    spriteName: AllLightsOn_MonitorOff
+    isGroup: 0
+    parentIndex: 9
+    spriteID: db58c886f7a4d3f43912f298ec25584e
+    layerID: 0
+    mosaicPosition: {x: 1, y: 12973}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638460439830800259
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 1
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

@@ -1,0 +1,229 @@
+# ScriptEnding
+; Play sfx of four characters running.
+@sfx RunGroupFootsteps
+@set Sigma="Sigma"
+@set Date="Date"
+@set Pepsiman="Pepsiman"
+@set Rabura="Rabura"
+@hideAll
+@back  id:BGTwitter
+@finishTrans RandomCircleReveal time:2
+We had no idea where we were, or whether this was truly freedom.|#1|
+We ran for what seemed like forever.<br>We just needed to <i>leave</i>.|#2|
+After the end of infinity,<br>we found ourselves in front of a large, metal door.|#3|
+Pepsiman: Don't fret, fellow Americans! I've got this!|#4|
+Date: Americans?|#5|
+Rabura: Aren't you Japanese?|#6|
+Pepsiman: ...|#7|
+Pepsiman: Not the time, Rabura.|#8|
+@sfx DoorFan volume:0.7
+Sigma: ...|#9|
+Date: ...|#a|
+Pepsiman: T-this is...|#b|
+Rabura: This is crazy!|#c|
+Date: You're kidding.|#d|
+; Show the BG of the lit-up room.
+@back  id:AllLightsOnBG transition:Ripple time:2
+@hide BGTwitter
+@bgm ZE_PersistentOminousness_loop intro:ZE_PersistentOminousness_start volume:0.7
+Sigma: This is...exactly where we started.|#e|
+@char Rabura.Fear
+Rabura: I knew Sigma led us wrong!|#f|
+Sigma: No, I didn't! I ran straight!|#10|
+@char Rabura.Anxious,Brow>Angry,Mouth>Talk2,Effects>NoEffect
+Rabura: Bullshit you did!|#11|
+@char Pepsiman.Sparkle
+Pepsiman: <i>The</i> Sigma, of Sigma Enterprises...?|#12|
+@char Date.Normal pos:50,-5
+@char Pepsiman.SparkleToggle>SparkleOff
+Date: I'm siding with Sigma here.<br>I didn't see him make any turns at all.|#13|
+Pepsiman: This must be some sort of fiendish trick.|#14|
+Sigma: Maybe it's a copy of the same room.|#15|
+@char Rabura.Terrified
+Rabura: An <i>exact</i> copy? That seems rather unbelievable.|#16|
+Sigma: I've seen crazier...|#17|
+Pepsiman: If anyone needs a weapon, I still have the baguette.|#18|
+Sigma: We don't.|#19|
+Date: I'm good.|#1a|
+@char Rabura.Exasperated,Mouth>Sad
+Rabura: I'd rather become a ghost.|#1b|
+Pepsiman: Well, what about a refreshing, ice cold<br>glass of...Dr. Pepper?|#1c|
+Sigma: Really, a Dr. Pepper? Not a Pepsi?|#1d|
+Pepsiman: Yep.<br>Believe it or not, sometimes PepsiCo bottles Dr. Pepper.|#1e|
+Pepsiman: It really just depends on the region you live in.|#1f|
+Sigma: Huh. That actually does explain a lot.|#20|
+Sigma: Sometimes I'll see Dr. Pepper in a<br>vending machine, and-|#21|
+@sfx Device4
+@set Sipher="???"
+@sfx industrial-drone loop:true wait:false
+Sipher: So…you've solved the puzzle,<br>yet ended up back where you started.|#22|
+Sipher: Rather fitting, considering the stories you hail from.|#23|
+@char Date.Grimace
+Date: Who's there?|#24|
+Pepsiman: N-no way...|#25|
+@char Rabura.Terrified,Arms>GirlPose
+Rabura: That can't be real...!|#26|
+@stopBgm ZE_PersistentOminousness_loop fade:2
+@stopSfx industrial-drone
+@hideAll
+@back  id:BGTwitter time:1
+He was unlike anything I'd ever seen before....|#27|
+This guy…|#28|
+He was… He was…!|#29|
+@bgm ZE_MartianIsolation_loop intro:ZE_MartianIsolation_start volume:0.7 wait:false
+@back  id:AllLightsOnBG wait:false
+@hide BGTwitter
+@char Sipher.HatchClosed wait:false
+@spawn ShakeCamera params:,3,0.1,,0.5,,false,true wait:false
+@sfx Impact wait:false
+Date: He's a giant snail?!|#2a|
+@set Sipher="Sipher"
+@char Sipher.HatchClosed
+Sipher: Welcome, everyone, to the main event!|#2b|
+Sipher: My name is Sipher, and it's a pleasure to meet you all in person.<br>I trust that you've been enjoying the kidnapping.|#2c|
+@hide Sipher
+@show Date,Rabura,Pepsiman
+Pepsiman: You're…a snail.|#2d|
+@char Rabura.Confused
+Rabura: S-so…the lubricant, it was actually…|#2e|
+@hide Date,Rabura,Pepsiman
+@show Sipher
+Sipher: Correct. That was my mucus.|#2f|
+@hide Sipher
+@show Date,Rabura,Pepsiman
+@char Date.Unamused pos:46.5
+Date: Ew…|#30|
+@char Rabura.Yell,Mouth>VeryAgape
+Rabura: Dammit!|#31|
+@char Rabura.Eye>Shock
+Rabura: If I'd known it was snail mucus,<br>I would have slathered it all over my face.|#32|
+@char Rabura.Eye>HalfOpen,Mouth>Talk2,Brow>SadBrow
+Rabura: That stuff is so good for the skin! And it was fresh!|#33|
+I scowled at Rabura.|#34|
+@char Rabura.Anxious
+Rabura: Right. Not the time.|#35|
+@char Date.Normal,Brow>Confused,Mouth>SlightOpen
+Date: Sheesh, why did it have to be a snail?|#36|
+Date: It couldn't have been a cat, huh…|#37|
+Sigma: That would have been mew-ch better.|#38|
+Date: …|#39|
+Sigma: Whenever someone brings up cats, I canya't control it.|#3a|
+@char Rabura.Exasperated
+Rabura: Weirdo.|#3b|
+@char Pepsiman
+Pepsiman: Yeah, definitely a weirdo.|#3c|
+Sigma: Oh, shut up.|#3d|
+@hide Date,Rabura,Pepsiman
+@char Sipher
+Sipher: Can you freaks stop bickering for five seconds?|#3e|
+Sipher: Ugh, humans…|#3f|
+Sipher: I really will take great pleasure in ending your<br>disgusting, privileged lives.|#40|
+@hide Sipher
+@show Date,Rabura,Pepsiman
+@char Date.Grimace
+@char Rabura.Fear
+Date: You're...going to kill us?|#41|
+Sigma: What the hell did we ever do to you?<br>I don't even know you!|#42|
+@hide Date,Rabura,Pepsiman
+@show Sipher
+; BGM cuts out for drama
+@stopBgm ZE_MartianIsolation_loop fade:1
+Sipher: Oh, Sigma…|#43|
+Sipher: Sigma, Sigma…|#44|
+Sipher: You know me, and you know damn well what you did.|#45|
+Sigma: …|#46|
+@bokeh dist:10 power:0.1 time:3
+SigmaInternal: Do I…know him?|#47|
+Despite not consciously remembering,<br>I felt that, deep down at the edges of my soul,<br>I could remember.|#48|
+@bokeh dist:0 power:0 time:2 wait:false
+Sigma: I…|#49|
+Sigma: Who are you?|#4a|
+@hide Date,Rabura,Pepsiman
+@show Sipher
+Sipher: Me?|#4b|
+@wait 1
+@bgm ZE_MorphogeneticSorrow_all volume:0.7
+Sipher: Heh…|#4c|
+Sipher: I was abandoned, demonized.|#4d|
+Sipher: The best I ever got was the occasional joke at my expense.|#4e|
+Sipher: Like your precious Kagami, no one remembers me.|#4f|
+Sipher: You are all the definition of privilege.<br>All the fans of Uchikoshi's writings know who <i>you</i> are.|#50|
+Sipher: I wonder, can you even <i>fathom</i> how much it hurts?|#51|
+Sipher: To be <i>the</i> inciting incident, yet to not get a model?|#52|
+@spawn ShakeCamera wait:false
+Sipher: Not even a damn drawing!<br>I never even got fucking concept art!|#53|
+@hide Sipher
+@show Date,Rabura,Pepsiman
+@wait 0.2
+@char Date.Thinking,Eye>Half,Mouth>Grimace
+Date: What the <i>hell</i> is this guy talking about?|#54|
+@char Rabura.Terrified
+Rabura: Something about supermodels, I think?|#55|
+@hide Date,Rabura,Pepsiman
+@show Sipher
+Sipher: Of course you don't understand. You'd never get it.|#56|
+; Use text animator to make "sooooo" wiggle.
+Sipher: You're the elite!|#57|
+Sipher: You're the heroes, the important ones!<br>You're <wiggle>sooooooooooooooooo</wiggle> sexy and cool!|#58|
+Sipher: But me?|#59|
+Sipher: Well, I don't even <i>exist</i>!|#5a|
+@show Pepsiman
+Pepsiman: …|#5b|
+Pepsiman: I'm…so sorry.|#5c|
+Pepsiman: Believe me, I understand how it feels to be forgotten.|#5d|
+@stopBgm ZE_MorphogeneticSorrow_all fade:.3
+; BGM swaps from Morphogenetic Sorrow again quickly
+@bgm ZE_MartianIsolation_loop intro:ZE_MartianIsolation_start volume:0.7 wait:false
+@hide Pepsiman
+Sipher: You don't understand shit!|#5e|
+Sipher: People remember you! You're a meme!|#5f|
+@spawn ShakeCamera wait:false
+Sipher: People <i>like</i> you!|#60|
+Sipher: No one speedruns <i>me</i>!|#61|
+Something burned at the edge of my brain.<br>The memory of what Sipher was talking about…|#62|
+Somehow, I knew him.|#63|
+In another timeline, in some other world…<br>I knew him well.|#64|
+Sipher: Do you remember me, Sigma?|#65|
+@spawn DigitalGlitch params:1,2
+Sigma: I…I don't…|#66|
+Sipher: Humans and their memories are…fascinating.|#67|
+Sipher: One miniscule, small trigger can restore the entirety of a human's memory.|#68|
+Sipher: Even if inside another body, or an alternate timeline.|#69|
+@hide Sipher
+@show Date,Rabura,Pepsiman
+@char Rabura.Fear wait:false
+Rabura: Another body…?|#6a|
+@char Pepsiman
+Pepsiman: Timeline?|#6b|
+@char Date.Angry
+Date: What the hell is this guy <i>talking</i> about?|#6c|
+Date: Does anyone here actually understand<br>what the hell is going on?|#6d|
+@hide Date,Rabura,Pepsiman
+@sfx Mucin
+@startTrans
+@char Sipher.HatchOpen
+@camera offset:,3 zoom:0.6
+@finishTrans CircleReveal params:3.33 time:1
+Sipher: Sometimes…|#6e|
+@bokeh focus:Sipher power:0.4 wait:false
+@camera offset:0 zoom:0.3 time:10 wait:false
+Sipher: Sometimes a single, solitary snail can restore the memories<br>of those who scorned it.|#6f|
+Sipher: I am he -- the single, solitary snail…|#70|
+; Show the snail mech with a machine gun.
+@sfx MachineGun wait:false
+@char Sipher.GunAndHatch+Hatch,GunAndHatch+Gun
+@stopBgm ZE_MartianIsolation_loop fade:.3
+Sipher: And I'm here to get my revenge.|#71|
+@wait 2
+@sfx Radio5 wait:false
+@spawn DigitalGlitch params:2,3.3
+; Fade out to black.
+@hideAll
+; Jump to credits
+@processInput false
+@loadScene CreditsScene additive:true
+@bgm Pepsiman_credits loop:false
+@wait 65
+@unloadScene CreditsScene
+@processInput true
+@title

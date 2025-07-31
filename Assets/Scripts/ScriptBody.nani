@@ -1,0 +1,1070 @@
+# Intro
+; The room is quiet, save for an A/C. Visually, there's no background, just pitch black.
+; We play from Sigma's point-of-view. As such, we do not see Sigma.
+@sfx industrial-drone volume:0.1 loop:true
+@set Sigma="Sigma"
+@set SigmaInternal="Sigma"
+@char Sigma
+@camera offset:0,0
+@back  id:MainBackground
+@back  id:FullyDark
+
+Deep blackness surrounded my vision, more potent than<br>the deepest of inks.<br>I felt like I was drifting, dreaming, the world a messy blur.|#1|
+@sfx DoorFan volume:0.3 loop:false fade:3
+Then…I heard something --<br>the whine of a machine, and the sound of creaking metal.|#2|
+
+Suddenly, there was a loud slam, and then a click.<br>And as soon as it started, silence once again prevailed.|#3|
+I opened my eyes, but the darkness still covered all.|#4|
+Where…was I…?|#5|
+; Show Sigma Waking CG
+@back  id:SigmaWakes
+@blur SigmaWakes power:1 time:1
+@hide FullyDark
+I rubbed my eyes in an attempt to force them to adjust.|#6|
+; Play door slamming and then lock clicking sfx.
+; Play a blur effect similar to Mario opening his eyes as he sees Rogueport for the first time. Recorded reference of this effect can be found here.
+; Sigma's eyes adjust to the light.
+Sigma: Ugh…|#7|
+@blur SigmaWakes power:0 time:2
+; Show distorted, blurry view of the room Sigma is in.
+Sigma: My head...!|#8|
+Hang on...|#9|
+@back  id:MonitorOffAndDim transition:Crossfade
+@bgm ZE_PersistentOminousness_loop intro:ZE_PersistentOminousness_start volume:0.6
+@hide SigmaWakes
+Oh no. Oh no no no.|#a|
+Sigma: Dammit, no! Not again!|#b|
+I was…|#c|
+Wait, this was just like before…!|#d|
+@spawn ShakeCamera params:,3,0.1,,0.5,,false,true
+Sigma: God <i>dammit</i>!<br>I've been kidnapped again!|#e|
+I inhaled deeply, then exhaled, trying to combat the rising panic in my system.|#f|
+Sigma: I know I've done this before already, but it never gets any easier…|#10|
+Sigma: Shit!<br>Why does this keep happening to me?|#11|
+
+# SigmaAdventure
+@stopsfx industrial-drone fade:3 wait:false
+
+Out of the corner of my eye, I spotted something against the wall.|#12|
+Sigma: Hey, it's a computer monitor.|#13|
+Sigma: Looks like it's one of those really old ones. Cathode ray tubes, I think they're called.|#14|
+Sigma: Okay, let's see…|#15|
+; Sigma turns on the monitor. Play an old PC starting up noise.
+@back  id:MonitorOnAndDim
+@hide MonitorOffAndDim
+Sigma: Ah-ha!<br>It's on!|#16|
+Since I could now see my surroundings better,<br>I used the opportunity to look at my wrist.|#17|
+@back  id:SigmaArm
+@hide MonitorOnAndDim
+Sigma: Phew…|#18|
+Sigma: There's nothing there. That's a relief.|#19|
+Sigma: Doesn't seem to be a bracelet anywhere on my body, actually.|#1a|
+Sigma: Unless there's something on my…|#1b|
+; play unzip sfx
+@sfx Zipper volume:0.7 loop:false
+@wait 1.5
+Sigma: Okay...nothing there, either.<br>Juuuuust checking.|#1c|
+@hide SigmaArm
+@back  id:MonitorOnAndDim
+Sigma: Anyway, let me see about that computer…|#1d|
+Sigma: I…wonder if it still works.|#1e|
+I wiggled the mouse and the fan whirred to life.|#1f|
+@wait 1
+@back  id:MonitorOnZoom
+Gradually, the screen grew brighter.|#20|
+; Note - old computer monitors did not turn on all at once! The phosphors slowly illuminated. I don't know if we should implement this, but it IS indeed neat.
+; Show a CG of the computer screen.
+Sigma: Let's see what we have here…|#21|
+; Show a background of the computer screen. The only thing that's there is an icon that says "TheTruth.bmp"
+; The player clicks on it.
+@stopBgm ZE_PersistentOminousness_loop fade:1.5
+Sigma: The Truth.bmp...?|#22|
+Sigma: It's...some sort of picture.|#23|
+@sfx SomniumFiles_Heartbeat volume:0.7 loop:true
+; Play AITSF heartbeat sfx (SomniumFiles_Heartbeat.wav)
+I clicked on the file, <br>pointedly trying to ignore the thumping of my own heart.|#24|
+@stopSfx SomniumFiles_Heartbeat
+; Show the CG of Uchikoshi's baguette tweet, but with the Twitter UI simplified and modified enough to be generic. Uchikoshi's handle is the same, but the website is To-Witter.com. Show ONLY Uchikoshi's reply.
+; IMPORTANT: The screenshot must show the sidebar to be only zoomed in to around 600% by default.
+Sigma: What the hell…?|#25|
+@startTrans
+@camera offset:-1,-4.1 zoom:0.57 wait:false
+@back  id:BGTwitter
+@startTrans
+@hide MonitorOnZoom
+@finishTrans CrossFade time:1
+Sigma: It's some guy talking about…a toaster? And a baguette?|#26|
+Sigma: I don't get any of this…|#27|
+Sigma: And who's this 'Uchikoshi_Eng'?|#28|
+
+# DateWakes
+@startTrans
+@back  id:FullyDark
+@hide BGTwitter
+@camera offset:0 zoom:0
+@set "Date=\"Strange Voice\""
+@sfx industrial-drone volume:0.1 loop:true
+@finishTrans CircleReveal params:3.33 time:1
+Date: Ungh…|#29|
+Date: Where…am I?|#2a|
+Date: Everything's so dark…|#2b|
+Date: I know that Mama told me to expect a dark, moist place, but somehow this wasn't what I expected.|#2c|
+Sigma: Seems like I have company.<br>Doesn't sound like it's a girl this time, though.|#2d|
+SigmaInternal: Hey, as long as it's not another rabbit.|#2e|
+@sfx SoloThreeFootsteps volume:0.4
+A strange man approached me, looking disoriented.|#2f|
+@set "Date=\"Strange Man\""
+@char Date.Groan pos:50,0 transition:Crossfade time:1
+@wait 1.5
+@char Date.Normal
+Date: Where the hell am I? And…|#30|
+@bgm AITSF_tenkai_loop intro:AITSF_tenkai_start volume:0.7
+@camera offset:0,5 zoom:0.5 ortho:true time:2
+The man gave me a once-over.<br>His eyes narrowed, and his brow furrowed.|#31|
+@char Date.Unamused,Mouth>SlightOpen
+Date: And what's with <i>that</i> getup?|#32|
+@char Date.Unamused,Mouth>MouthDefault
+@spawn DepthOfField params:Date
+Something about this guy was giving me the heebie-jeebies.|#33|
+@stopsfx industrial-drone fade:0
+@camera offset:0,6 roll:-3 zoom:0.75 ortho:true time:0.5
+His eyes were a vibrant green, with one hidden behind a <br>curiously-decorated eye patch.|#34|
+@camera offset:0,4.4 roll:0 zoom:0.5 ortho:true time:1
+And that coat...<br>What the hell was up with that coat?|#35|
+Was he dressed as a pirate?|#36|
+@char Date.Unamused,Mouth>SlightOpen
+Date: Who the hell are you, and why are you dressed like you just walked in from a security convention?|#37|
+Sigma: Who am <i>I</i>?|#38|
+Sigma: I think that's my line, buddy. Who are <i>you?</i>|#39|
+Sigma: And for your reference, I <i>work</i> in security.|#3a|
+@char Date.Unamused
+Date: Hey, no fair. I asked you first.|#3b|
+Sigma: …|#3c|
+Date: …|#3d|
+Sigma: Fine. Sigma -- that's my name. You happy?|#3e|
+@char Date.Normal
+Date: Not exactly, but I'll take it.|#3f|
+@camera offset:0,0 roll:0 zoom:0.0 ortho:true time:1
+@sfx ClothesRustle volume:0.8
+@char Date.Angry wait:false
+Suddenly, the man furiously patted the pockets on his gaudy, purple and black coat.|#40|
+@char Date.Grimace
+@spawn ShakeCamera wait:false
+Date: Augh! Dammit!|#41|
+Date: My Evolver's gone!<br>Damn bastards must have taken it when they knocked me out.|#42|
+@char Date.Groan
+Date: Ugh, and I thought I was harder to take down than that, too.|#43|
+Date: Assholes caught me by surprise when I was enjoying my collection…|#44|
+I almost asked what he meant by 'collection', but a gut intuition told me that I didn't <i>want</i> to know.|#45|
+Sigma: Hey, wait a second.|#46|
+Sigma: You're saying you were kidnapped, too?|#47|
+@char Date.Normal
+Date: Uh, duh.|#48|
+@char Date.Thinking,Brow>Confused
+Date: What, you think I hang out in creepy dark rooms for fun or something?|#49|
+Sigma: Uh…|#4a|
+@char Date.Unamused look:center
+Date: Okay, wow. Rude.|#4b|
+Sigma: I don't know anything about you. That's why I just asked for your name.|#4c|
+@char Date.Sigh
+Date: <i>Sigh.</i><br>Fine, fine. I'll concede defeat.|#4d|
+'Defeat'?|#4e|
+@char Date.Normal
+What was <i>with</i> this guy?|#4f|
+@set Date="Date"
+@sfx SoloThreeFootsteps
+@char Date.Normal pos:50,-44 scale:1.5 time:2
+@bokeh focus:Date power:0.25
+@char Date.Smile
+Date: Name's Date -- Kaname Date.|#50|
+@sfx CardPull loop:false
+He presented a badge to me. Apparently, <i>that</i> hadn't been confiscated by the kidnappers.|#51|
+Date: I'm a detective from the Tokyo Metropolitan Police department.|#52|
+Sigma: Do you normally introduce yourself by your occupation?|#53|
+Sigma: Wait, Tokyo? Why are you all the way out here?|#54|
+Date: Depends.|#55|
+@char Date.Thinking
+Date: Where <i>is</i> 'here', exactly? Do you know where we are?|#56|
+Date: Or…when we are?|#57|
+Sigma: …|#58|
+Sigma: When…?|#59|
+Sigma: What, do you think we've travelled through time or something?|#5a|
+@char Date.Unamused
+Date: No, obviously. That's stupid.|#5b|
+SigmaInternal: No, <i>you're</i> stupid.|#5c|
+@char Date.Groan
+Date: Look, I know as much as you do, Sigma.|#5d|
+@char Date.Smirk
+Date paused, a smirk building on his lips.|#5e|
+Date: Heh... Sigma...|#5f|
+Sigma: Yes? What is it?|#60|
+@char Date.Grin
+@spawn ShakeCharacter params:Date wait:false
+Date: Heheh... Sigma...!|#61|
+Sigma: ...|#62|
+Sigma: Eh, whatever.|#63|
+Sigma: Hey, can I see your badge for a moment? I need to check something.|#64|
+Sigma: Seriously, what is it? What's so funny?|#65|
+@spawn ShakeCharacter params:Date wait:false
+@char Date.Giggle
+Date: Sigma...balls…!|#66|
+Date: Heehee…|#67|
+Sigma: …|#68|
+Date: Pfft…|#69|
+Seriously, what the hell was <i>with</i> this guy?|#6a|
+Sigma: Look, just…hold your badge still for a second, all right?|#6b|
+@bokeh dist:10 power:0.4
+I bent down, staring into Kaname's badge.|#6c|
+My reflection stared back -- youthful and vibrant.|#6d|
+SigmaInternal: Phew.|#6e|
+Sigma: Thanks. Just wanted to check something.|#6f|
+Sigma: Man, if I had a nickel for every time that I had been kidnapped while at work…|#70|
+@char Date.Thinking
+@bokeh focus:Date power:0.25
+Date: Weirdly, I can relate to that.|#71|
+Sigma: …|#72|
+Date: …|#73|
+Sigma: Huh.|#74|
+Date: So, got any bright theories as to where we are?|#75|
+Sigma: Actually, I was in the middle of figuring that out...right before you showed up.|#76|
+@hideChars time:1
+@stopBgm AITSF_tenkai_loop fade:2
+@back  id:ToasterLightOn
+I looked around our surroundings.<br>With the monitor on and my eyes adjusted, I could make some things out.|#77|
+@bgm ZE_ErstwhilePlacidity_loop intro:ZE_ErstwhilePlacidity_start volume:0.7
+We seemed to be in some sort of large, open structure. I couldn't see any obvious entrance or exit, and the text scribbled on the wall seemed to be some sort of weird, nonsensical message.|#78|
+@bokeh dist:0 power:0 time:2
+Sigma: 'A mostly nihilist area'...? What the hell?|#79|
+@char Date.Normal pos:67,-14 scale:1.1
+Date: Seems like it's some kind of freaky art gallery.|#7a|
+Sigma: Yeah. It does.|#7b|
+Sigma: Earlier, I heard someone opening a door…|#7c|
+Sigma: Maybe it's hidden.|#7d|
+@char Date.Ponder
+Date: That's certainly possible.|#7e|
+Date: If Aiba were here, she could help, but…|#7f|
+; Show Date's sheepish sprite
+@char Date.PornoThink
+Date: Well, I tend to take her out of my<br>hole when I'm enjoying my collection.|#80|
+Sigma: …|#81|
+Yep.<br>Definitely did <i>not</i> want to ask what this guy's "collection" was.|#82|
+Sigma: Aiba? What's an Aiba?|#83|
+@char Date.SmirkThink
+Date: Don't worry about it, ballsman.|#84|
+Sigma: …ballsman.|#85|
+@char Date.Normal
+Date: Anyway, what's this? It says something about…|#86|
+@char Date.BlushToggle>BlushOff,Brow>Angry,Eye>Half,Mouth>MouthDefault,Arms>ArmsSide
+Date: Well, that's not helpful.|#87|
+@char Date.Thinking
+Date: Explains what this bread is for, though…kind of.|#88|
+Sigma: You think it's a clue, Kaname?|#89|
+Sigma: I couldn't make heads or tails of it.|#8a|
+@char Date.Sigh
+Date: That's a bit personal, Sigma. We just met.|#8b|
+Sigma: Bread isn't personal.|#8c|
+@char Date.Normal
+Date: …|#8d|
+@stopBgm ZE_ErstwhilePlacidity_loop fade:3
+Date: Why are you calling me that?|#8e|
+Sigma: Huh?|#8f|
+Date: Kaname. You keep calling me 'Kaname'.|#90|
+Sigma: I'm not following. You said your name was Kaname Date.|#91|
+Sigma: What am I supposed to call you?|#92|
+@wait 1.5
+Sigma: Ohhh.|#93|
+Sigma: <i>Oh.</i>|#94|
+Sigma: You're from Tokyo! You're Japanese!|#95|
+@char Date.Thinking
+Date: Last I checked. What, aren't you?|#96|
+Sigma: N-no…?|#97|
+Date: But you're speaking Japanese right now.|#98|
+Sigma: Uh... No, I'm not.|#99|
+@char Date.BlushToggle>BlushOff,Brow>Focused,Eye>Half,Mouth>MouthDefault,Arms>ArmsThinking
+Date: ...|#9a|
+@char Date.Normal
+Date: Well, that's weird.|#9b|
+Date: Whatever. In Japan, it's generally a symbol of intimacy to call someone by their first name.|#9c|
+Date: Just a little FYI for you.|#9d|
+Sigma: Oh.|#9e|
+Sigma: ...|#9f|
+@sfx SomniumFiles_Heartbeat volume:0.7
+Date: ........|#a0|
+Wait... I'd been <i>kidnapped</i>.|#a1|
+Why the hell was I thinking about…?|#a2|
+Sigma: U-um, right. I'm not interested in you, either.|#a3|
+@char Date.Tsundere
+Date: I didn't say it was sexual intimacy.|#a4|
+Sigma: Neither did I.|#a5|
+@char Date.BlushingBottom
+Date: …|#a6|
+Sigma: …|#a7|
+@char Date.BlushToggle>BlushOff,Brow>Focused,Eye>Half,Mouth>MouthDefault,Arms>ArmsSide
+We stared at each other for a few moments.<br>I narrowed my eyes, and he his.|#a8|
+@bgm AITSF_OffTheRecord_loop intro:AITSF_OffTheRecord_start volume:0.7
+Date: So, the clue.|#a9|
+Sigma: Right, right. <i>*ahem*</i>|#aa|
+Sigma: The clue.|#ab|
+@char Date.Normal
+Date: It was called 'The Truth'. So, whatever it is, it's clearly important, right?|#ac|
+Sigma: Yeah, that's what I thought, too. But it just seemed like something was… missing…|#ad|
+Sigma: Wait a minute.|#ae|
+@sfx SoloThreeFootsteps
+@hideChars time:1
+@hide ToasterLightOn
+@back  id:MonitorOnZoom
+I opened the file on the computer again, looking a bit more closely at the interface.|#af|
+@camera offset:-1,-4.1 zoom:0.57 time:0
+@back  id:BGTwitter
+@hide MonitorOnZoom
+Sigma: Ah-ha! It's zoomed in.|#b0|
+@camera offset:0.0 zoom:0.0 easing:SmoothStep time:4 wait:false
+Sigma: What in the…?|#b1|
+Date: This doesn't make any sense…!|#b2|
+Sigma: That's…|#b3|
+@wait 0.5
+@startTrans
+@back  id:MonitorOnZoom
+@hide BGTwitter
+@finishTrans LineReveal time:1
+Sigma: Date, that's us. That's <i>us</i> on the monitor.|#b4|
+@spawn ShakeCamera wait:false
+@char Date.Tsundere,Mouth>Grimace pos:50,-10
+Date: I can <i>see</i> that, Sigma!|#b5|
+Sigma: 'God made us in different games because he knew<br>we would fuck each other.'|#b6|
+@char Date time:1
+Date: I-I…|#b7|
+@bokeh focus:Date power:0.4
+Date stared at the computer, gobsmacked.<br>Then his gaze turned to me, scanning over my body<br>and looking between me and the picture.|#b8|
+Date: ...|#b9|
+@char Date.Tsundere,Mouth>MouthDefault,BlushToggle>BlushOff transition:CrossFade time:1
+Date: It's identical. That's you, all right.|#ba|
+Date: And I know that's me, but I don't remember taking that picture.|#bb|
+@char Date.Angry
+Date: It could be one of the memories I lost, but…|#bc|
+Date: I don't think there's enough publicly available information on me<br>for this to have been generated by Aiba or another AI.|#bd|
+Date: Sigma, are you a celebrity?|#be|
+Sigma: Nope. As far as the public knows, I'm just some guy.|#bf|
+@char Date.Mouth>MouthDefault
+Sigma: No strangers should have my picture.|#c0|
+@char Date.Arms>ArmsThinking,Brow>Angry transition:CrossFade time:0.5
+Date: …|#c1|
+Date: I don't know how to respond to that.|#c2|
+Sigma: Yeah, that's fair.|#c3|
+Sigma: This is really freaking creepy.|#c4|
+Date: Do you think our captor was spying on us?|#c5|
+Sigma: Obviously. Although I don't know why I'd be posed like this, or so…flat.|#c6|
+@char Date.Ponder
+Date's eyes darted to my chest.<br>I decided not to correct him on what I meant.|#c7|
+@char Date.Thinking
+Date: Hey, what do you think it meant by-|#c8|
+@hideChars time:.3
+@stopBgm AITSF_OffTheRecord_loop fade:4
+@back  id:ToasterLightOn
+@hide MonitorOnZoom
+@bokeh dist:0 power:0
+@sfx Device4
+Before Date could finish his sentence, a voice blared from all around us.|#c9|
+The voice was loud and distorted,<br>clearly using some kind of voice modulator.|#ca|
+
+@set "Sipher=\"Modulated Voice\""
+# SipherMonologue
+@sfx radio_char_talk
+Sipher: Hello, mortals.<br>I do hope you're having a wonderful kidnapping.|#cb|
+@bgm ZE_ExtremeExtrication_all volume:0.8 loop:true
+Sigma: Here we go.|#cc|
+Sipher: I am your captor today.|#cd|
+Sipher: My name is Sipher, and it is my utmost pleasure to be here.|#ce|
+@set Sipher="Sipher"
+Sipher: Would you like any snacks or beverages while you wait?|#cf|
+@char Date.Thinking,Brow>Focused
+Date: …|#d0|
+Sigma: …|#d1|
+Date: Is this a call and response? Is he talking to us?|#d2|
+@char Date.Mouth>MouthDefault
+Sipher: Wha…|#d3|
+Sipher: Yes, I'm talking to you! Who else is here?|#d4|
+Date: Well, you're obviously talking through a speaker.<br>Even I know that.|#d5|
+Date: You're not physically present.<br>For all we know, this could be prerecorded.|#d6|
+Sipher: I assure you that this discussion is most certainly live, Mr. Date. Otherwise, I could not respond to your comment.|#d7|
+Sipher: Besides, recording it would suck all of the joy out of it.|#d8|
+Date: So…you know my name.|#d9|
+@char Date.Arms>ArmsSide
+Sipher: Indeed, Mr. Date.|#da|
+Sipher: Are you familiar with the concept of a vivarium, Sigma?<br>Mr. Date?|#db|
+@char Date.Brow>Raised,Mouth>SlightOpen
+Date: What? Like…a fish tank?<br>Mizuki keeps some clione in the fridge as pets.|#dc|
+
+Sipher: Not...quite.<br>Vivariums are small, glass tanks.|#dd|
+@char Date.Normal transition:CrossFade
+Sipher: Humans use them to<br>contain those...pets...that you mentioned.|#de|
+Sipher: Vivariums often contain moss, branches,<br>and a small ecological system inside their<br>pitiful, transparent walls.|#df|
+Sipher: To humans, these vivariums are novelties - simple distractions<br>from the mundanities of their busy lives.|#e0|
+Sipher: But for the creatures within the tank, this is their home,<br>and all they've ever known.|#e1|
+Sipher: They see a boundless world, yet they are constrained<br>by the limitations of glass.|#e2|
+Sipher: I...am an observer from another world.|#e3|
+Sipher: To me…<br>To me, you are those creatures within the vivariums.|#e4|
+Sipher: You are just my...pets.|#e5|
+@char Date.Eye>Half
+Sigma: ...|#e6|
+Date: Okay…|#e7|
+Sipher: Inside of that computer, you'll find a means of escape<br>from your little glass cage.|#e8|
+Sipher: Your struggle does amuse me so.|#e9|
+Sipher: Thus, I have provided a fun little puzzle for you to solve. Perhaps if you solve it, you can go free.|#ea|
+SigmaInternal: Perhaps, he says...|#eb|
+Date: …|#ec|
+Sigma: So, that's the game, right?|#ed|
+Sigma: Let me guess -- this one is called the Septenary Games?|#ee|
+Sipher: No, no.|#ef|
+Sipher: I didn't think of a name for it.<br>It's just a death game, honestly.|#f0|
+Sipher: No need to overcomplicate things, you know?|#f1|
+Sigma: That's disappointing.|#f2|
+Sipher: Just solve the puzzle and find me. It's that simple.|#f3|
+Sipher: Goodbye.|#f4|
+@char Date.Angry
+Date: Hey…wait!|#f5|
+Date: You can't just leave us here!|#f6|
+@char Date.Angry,Mouth>MouthDefault
+Sipher: I can, and I will.|#f7|
+Sigma: Can't you at least give us a hint? A starting point?|#f8|
+Sipher: I already did.|#f9|
+Sipher: The Truth...|#fa|
+Sipher: The image you saw on that computer is your ticket to freedom…perhaps.|#fb|
+SigmaInternal: Again, concerning use of 'perhaps'.|#fc|
+@char Date.Thinking,Arms>ArmsSide
+Date: Wait! One more thing!|#fd|
+Sipher: …|#fe|
+Sipher: Fine. What is it?|#ff|
+Date: What if we have to use the bathroom?|#100|
+Sigma: ...|#101|
+Sipher: ...|#102|
+Date: Well?!|#103|
+Sipher: I…did not consider that.|#104|
+@char Date.Unamused,Mouth>MouthDefault
+Date: ………………………|#105|
+Sigma: Is this guy even human?|#106|
+Sipher: No, no! I mean…yes, yes!|#107|
+Sipher: I'm human, haha. Got two legs and everything.|#108|
+SigmaInternal: So…not a human, then. Got it.|#109|
+Sipher: Uh…|#10a|
+Sipher: Just hold it, all right?|#10b|
+Date: You're a sick freak, Sipher.|#10c|
+@stopBgm ZE_ExtremeExtrication_all fade:4
+Sipher: You have an hour.|#10d|
+; Sipher clicks off the intercom. Play a sfx.
+Date: Or what?|#10e|
+@sfx radio_char_talk
+@sfx Device4
+*click*|#10f|
+@char Date.Grimace
+Date: Give us more information, asshole!|#110|
+@spawn ShakeCamera wait:false
+@sfx DatePunchWall
+Date tried punching and then kicking the wall.<br>As I expected, nothing happened.|#111|
+@spawn ShakeCamera params:7,,0.1,,,false,true wait:false
+@sfx DateKickWall
+Date: An hour until <i>what?</i>|#112|
+Date: I'm not going to be a part of your damn sideshow!|#113|
+For good measure, he tried chucking his badge at it.|#114|
+@sfx Clink
+It bounced off harmlessly.|#115|
+@wait 1.5
+Sigma: I think we both knew that wouldn't work.|#116|
+@char Date.Mouth>MouthDefault
+Date: Yeah. Just felt obligated to try it.|#117|
+Sighing, Date returned to me.|#118|
+@bgm ZE_anxiousness_loop intro:ZE_anxiousness_start volume:0.7
+@char Date.Sigh
+Date: I guess we have to play this Sipher's game, yeah?|#119|
+Sigma: Suppose so.|#11a|
+@char Date.Normal
+I rubbed my hands together.|#11b|
+Sigma: Well, no time like the present. Let's get cracking!|#11c|
+Date: …|#11d|
+; Ghost Trick reference
+@char Date.Unamused,Mouth>MouthDefault,Eye>EyeDefault transition:Crossfade time:1
+Date: I thought you'd be a little more grave, given the circumstances.|#11e|
+Sigma: Yeah, well, this is the third time, after all.|#11f|
+Sigma: It's scary what a guy can get used to, don't you think?|#120|
+Date: Frankly, the way your mind works is a<br>whole lot scarier to me…|#121|
+@char Date.Brow>Focused,Mouth>SlightOpen
+@spawn ShakeCamera params:4,,0.12,,,false,true wait:false
+Date: Wait, <i>third</i>?!|#122|
+Sigma: Uh-huh.|#123|
+Date: You're telling me that you've been kidnapped before.|#124|
+Sigma: That's right.|#125|
+@char Date.Brow>Confused,Mouth>SlightOpen
+Date: And then again.|#126|
+Sigma: Yeah.|#127|
+Date: And then this is the third time.|#128|
+Sigma: Uh-huh. Happens weirdly often.|#129|
+Date: …|#12a|
+@char Date.Eye>Half
+Date: How the hell can someone get kidnapped three times?!<br>What, you a multimillionaire or something?|#12b|
+Date: Wait, but Ryuki's loaded and even <i>he</i> doesn't<br>get kidnapped this much!|#12c|
+@char Date.Mouth>Grimace,Eye>Half
+Date: How the hell do <i>you</i> do it?|#12d|
+Sigma: Maybe I'm just so handsome that I'm a huge target.|#12e|
+Date: No, that can't be it.<br>You're not hot.|#12f|
+Date: Your name is <i>waaaaay</i> too memorable for that.|#130|
+@char Date.Thinking,Eye>Half
+Date: Have you thought about going into forensics?<br>Then, maybe, you'd be…|#131|
+Date: Wait, what am I saying?|#132|
+@char Date.Grimace transition:CrossFade time:1
+Date: You're a guy! I can't date you!|#133|
+I frowned, crossing my arms.|#134|
+Who was <i>Kaname fucking Date</i> to say that<br><i>I</i> wasn't up to his standards?|#135|
+Date just yelled at a disembodied voice about pissing!<br>He had no room to talk.|#136|
+Sigma: Well, I can't date you, either.<br>And even if I <i>could</i>, I wouldn't want to.|#137|
+@char Date.Unamused
+Date: You wouldn't…|#138|
+@char Date.Mouth>MouthDefault,Eye>Half,Brow>Focused
+Date: Hey, what the hell is that supposed to mean?!|#139|
+Sigma: Oh, so the famous 'Tokyo Detective' can't figure it out, huh?|#13a|
+Sigma: The image on the computer was clearly saying that<br>we need to have sex to get out of here.|#13b|
+Sigma: And I'm not interested, so good luck getting out.|#13c|
+Date: You want me to…|#13d|
+@char Date.Mouth>Grimace,Eye>Half,Brow>Focused
+Date: How the hell was <i>that</i> your conclusion!?|#13e|
+Date: There's a loaf of bread right on the table!<br>That's clearly what it means by 'baguette'!|#13f|
+Date: There's a toaster right there, too!|#140|
+@char Date.Eye>-_-,Mouth>SlightOpen
+Date: Look, unless your 'baguette' is bigger than my hand,<br>I'm not interested.|#141|
+Sigma: Well, actually…|#142|
+@char Date.Normal
+Date: …|#143|
+Date: Hang on.|#144|
+Sigma: Yep.|#145|
+@char Date.Brow>Confused
+Date: …|#146|
+Date: How…How long <i>is</i> it?|#147|
+@char Date.Normal
+Date: We're both talking about cocks, right?<br>Are we on the same page here?|#148|
+Sigma: Um, when it's aroused, I'd say about eight-|#149|
+; Date mishears Sigma
+@spawn ShakeCamera params:4,,0.12,,,false,true wait:false
+@char Date.Angry,Eye>EyeDefault,Mouth>Grimace
+Date: <i>Eighteen inches?</i>|#14a|
+Sigma: Hang on! I didn't…|#14b|
+Sigma: …|#14c|
+Wait, why would I <i>want</i> to correct Date on this?|#14d|
+There was…no way he thought my penis was<br><i>actually</i> eighteen inches.<br>He couldn't actually be that stupid.|#14e|
+Date: There is n-no way that <i>you</i> are…eighteen…|#14f|
+@char Date.BlushToggle>BlushOn
+Date: Eighteen in…|#150|
+Date: I-I… You…|#151|
+@char Date.Tsundere
+Date: That has to be why you keep getting kidnapped!<br>Everyone's jealous!|#152|
+It was then that I realized Kaname Date was actually<br>the biggest idiot in the world.|#153|
+Sigma: You're entirely correct!|#154|
+Sigma: I keep getting kidnapped because of my<br>massive, eighteen-inch schlong.|#155|
+Date: …|#156|
+Sigma: …|#157|
+@char Date.Unamused,Brow>Focused
+Date: I hate you and your monster cock beyond words.|#158|
+
+
+
+# RaburaWakes
+@stopBgm ZE_anxiousness_loop fade:4
+@set "Rabura=\"Female Voice\""
+@hideChars
+Rabura: Ungh…|#159|
+Rabura: My head... I feel awful…|#15a|
+; Rabura appears.
+Rabura: Last thing I can remember, I was drinking some sake<br>and trying to forget about that date with…|#15b|
+@spawn ShakePrinter params:,2,,,0.2,,true,false wait:false
+Rabura: Oh, dammit!<br>I just remembered him!|#15c|
+Rabura: Augh, this is awful!|#15d|
+@char Rabura.Exasperated,Mouth>MouthDefault,Effects>NoEffect pos:,-3
+Oh. There was a woman here, too.|#15e|
+@set "Rabura=\"Strange Woman\""
+@bgm AITSF_ArcaneIncantation_loop intro:AITSF_ArcaneIncantation_start volume:0.7
+@char Rabura.Confused,Effects>NoEffect
+The strange woman stared between me and Date, confusion etched on her face.|#15f|
+Then, she stared one final time at the baguette, her bafflement deepening.|#160|
+@startTrans
+@hideChars
+@camera offset:2.82,4.3 zoom:0.7 ortho:true wait:false
+@char RaburaFullBody.Normal pos:57,1.9 scale:0.3
+@bokeh focus:RaburaFullBody power:2.0
+@finishTrans LineReveal time:1
+This woman was...|#161|
+Well, she was ridiculous.|#162|
+This lady's hair was a vibrant jade, tied up in a cute little bun.<br>Atop it sat two bulbous antennae.|#163|
+@camera offset:2.82,2 zoom:0.7 ortho:true easing:SmoothStep time:1
+The woman wore a tie that was, quite literally, pointing to her chest, as if to say, 'look at me! I've got huge boobs!'.|#164|
+@hideUI 
+@wait 2
+@showUI 
+@camera offset:2.82,-7.5 zoom:0.70 ortho:true easing:SmoothStep time:6
+@hideUI 
+@wait 2
+@showUI 
+And she wasn't wearing shoes...for some reason.|#165|
+Although...she did have sexy feet, admittedly.|#166|
+@hideUI 
+@wait 2
+@showUI 
+Still, definitely an insanely hot weirdo.|#167|
+@hideChars time:1
+@camera offset:0,0 zoom:0 easing:SmoothStep time:0
+@bokeh power:0 time:2
+@char Rabura.Exasperated,Mouth>Talk1 pos:70, time:1
+Rabura: My head... Ugh...|#168|
+SigmaInternal: She has a hangover, too?|#169|
+SigmaInternal: Guess she's a party chick. Nice.|#16a|
+@char Date.Normal,Mouth>Agape pos:35,0 scale:1.0 easing:SmoothStep time:1
+Date, meanwhile, was being weirdly normal about her.|#16b|
+SigmaInternal: That's unusual. Why is he being normal <i>now?</i>|#16c|
+; This is purposefully the WRONG saying. The saying is "strike while the iron is hot".
+SigmaInternal: Well, whatever. Gotta strike while the fire is hot, I guess.|#16d|
+@camera offset:-5,3 roll:-3 zoom:0.3 ortho:true time:1 wait:false
+@spawn DepthOfField params:Date
+Sigma: Hey, Date! There's a pretty lady here now.|#16e|
+@char Date.Unamused,Brow>Focused
+Date: I can see that.|#16f|
+Sigma: That means you can't get the pissing corner like you wanted.|#170|
+@char Date.Thinking,Arms>ArmsSide
+Date: The what?|#171|
+Sigma: The pissing corner?|#172|
+Date: ...|#173|
+@char Date.Normal,Brow>Confused,Mouth>Frown
+Date: I didn't…|#174|
+@char Date.Normal,Brow>Confused,Mouth>Agape
+Date: I never said anything about corners. I just asked where…|#175|
+Date trailed off, putting the pieces together<br>in his dumb, stupid little brain.|#176|
+@char Rabura.Anxious
+@char Date.Tsundere,Mouth>Grimace
+Date: Wait, you're just trying to make me look bad<br>in front of the hot chick!|#177|
+I couldn't help but laugh at him. God, what a sucker.|#178|
+@camera offset:2,3 roll:-3 zoom:0.3 ortho:true time:1 wait:false
+@spawn DepthOfField params:Rabura
+Rabura: I can hear all of this. You know that, right?|#179|
+@despawn DepthOfField
+@char Date.PornoMag
+Date: Don't butt into our conversation. This isn't about you.|#17a|
+Rabura: ...|#17b|
+@camera offset:0,0 roll:0 zoom:0 ortho:true time:2
+@char Rabura.Happy
+Rabura: So anyway, my name is Rabura.|#17c|
+@set Rabura="Rabura"
+Rabura: Can I have yours?<br>I figure you have names, even if you're ghosts.|#17d|
+Sigma: My name is Sigma. That's Date over there.|#17e|
+@char Date.Thinking
+Date: Ghosts? We're not-|#17f|
+Sigma: Wait a sec, Date.|#180|
+I faced Rabura, an idea forming in my head.|#181|
+; Change Rabura's sprite to confused, inquisitive.
+@char Rabura.Confused,Effects>NoEffect,Brow>BrowDefault
+Sigma: Hypothetical question.|#182|
+Sigma: If I <i>was</i> a ghost, would that make it more or<br><i>less</i> likely that you would let me sleep with you?|#183|
+@char Date.Eye>Half
+Date: <i>Dude.</i>|#184|
+I turned to Rabura, thoughtfully attempting to keep<br>my gaze focused above her neck.|#185|
+Rabura, for some goddamned reason, genuinely considered the question.|#186|
+Rabura: I guess it depends. The last ghost I met was sooo not my type.|#187|
+@char Rabura.Happy,Eye>HalfOpen,Arms>GirlPose
+Rabura: This is just a sake-induced hallucination anyway, right?<br>So, it's fine if we do it.|#188|
+Sigma: Fuck yeah!|#189|
+@char Date.Grin,Eye>-_-,Arms>ArmsThinking
+Date: You drink sake?  I drink it too, you know.|#18a|
+Date: Besides being kidnapped, what else do you do?|#18b|
+Date: Maybe once we're out of here, I can show you<br>and your sexy feet around my apartment.|#18c|
+@char Rabura.Confused,Arms>GirlPose
+@char Date.Smirk,Arms>ArmsThinking
+Date: I've got a big...sound system, you know.|#18d|
+Sigma: ...|#18e|
+@char Rabura.Terrified,Mouth>MouthDefault
+Rabura: ...|#18f|
+; Date looks distressed
+@char Date.Unamused,Eye>EyeDefault
+Date: W-what? Why are you all looking at me funny?|#190|
+@char Rabura.Terrified
+Rabura: Did you just say what I think you said?|#191|
+Date: That I have a big sound system?|#192|
+Rabura: No, not that. I think you know it's not that.|#193|
+Rabura: ...|#194|
+Date: Ah...|#195|
+@char Date.Horny time:1
+Date: Um, did I mention I'm a cop?|#196|
+Sigma: So? What's your point?|#197|
+@sfx CardPull loop:false
+@char Date.Grin,Eye>^_^
+Date turned to Rabura, flashing a grin.|#198|
+Sigma: You're a moron.|#199|
+@char Date.Smirk,Arms>ArmsThinking
+Date: Okay, pervert.|#19a|
+Sigma: Oh, like you and your foot kink have room to talk.|#19b|
+Date: Just wanted to show off how suave I am.|#19c|
+@char Date.Angry
+@spawn ShakePrinter params:,2,,,0.2,,true,true wait:false
+Date: <shake>Freak!</shake>|#19d|
+@spawn ShakeCamera wait:false
+Sigma: Sexist!|#19e|
+@char Date.Brow>Angry,Eye>Half,Mouth>Silly
+@spawn ShakePrinter params:,2,0.9,,0.1,,true,true wait:false
+Date: <wave>Freakishly huge cock!</wave>|#19f|
+@char Rabura.Yell,Eye>Closed,Mouth>Talk2
+Rabura: Oh my god, stop it!|#1a0|
+Rabura: You're adults, aren't you?|#1a1|
+@char Rabura.Speechless,Effects>NoEffect,Mouth>Talk1
+Rabura: Fucking act like it!|#1a2|
+Date: …|#1a3|
+Sigma: …|#1a4|
+@char Rabura.Anxious
+Rabura: Besides, if you're ghosts, you can't sleep with me, anyway.|#1a5|
+Sigma: We can work things out, baby.|#1a6|
+@char Rabura.Puzzled
+Rabura: …|#1a7|
+Sigma: I can just like…turn into a bat or whatever, right?|#1a8|
+@char Date.Unamused,Brow>Focused
+Date: That's a vampire. Ghosts just moan a lot.|#1a9|
+Rabura: Plus, I don't have any cinnamon on me.|#1aa|
+@char Date.Brow>Confused,Mouth>MouthDefault
+Date: Cinnamon?|#1ab|
+Date: Wait, scratch that.|#1ac|
+Date: Why do you think that we're ghosts again?<br>Refresh my memory.|#1ad|
+@char Rabura.Thinking
+Rabura: Well… I don't remember coming to this building,<br>and this place seems kind of spooky.|#1ae|
+Sigma: …|#1af|
+Date: …|#1b0|
+Sigma: Is there...more?|#1b1|
+@char Rabura.Default
+Rabura: No, that's it.|#1b2|
+Date: That's why you think we're ghosts?<br>Because this place is...kind of spooky?|#1b3|
+@char Rabura.Confused,Brow>Angry,Effects>NoEffect
+Rabura: I'm a spirit medium! I've seen ghosts with my own eyes!<br>They're real!|#1b4|
+Rabura: I'm not crazy!!|#1b5|
+SigmaInternal: She's sure acting awfully defensive...|#1b6|
+@char Rabura.Fear
+Rabura: I've been possessed before!<br>A ghost has controlled my body!|#1b7|
+Date: ...|#1b8|
+Sigma: ...|#1b9|
+Sigma: Is that, like, a BDSM thing?|#1ba|
+@wait 1.5
+@char Rabura.Terrified
+Rabura: ...|#1bb|
+Rabura: No.|#1bc|
+@wait 1.5
+Date: <i>Dammit.</i>|#1bd|
+; pause for a few secs
+@wait 1.5
+Date: Hold on...|#1be|
+@char Date.Smirk,Arms>ArmsThinking
+Date: If me and Sigma <i>were</i> ghosts, your hands would pass right through us, right?|#1bf|
+@char Rabura.Default,Mouth>Talk2
+Rabura: That's correct.|#1c0|
+@char Date.Arms>ArmsSide
+Date: So, do it.<br>We can prove to you that we're not ghosts!|#1c1|
+@char Date.Horny,Arms>ArmsSide
+Date: Touch my body so you can see how <i>real</i> I actually am!|#1c2|
+SigmaInternal: Why'd he have to say it like that...?|#1c3|
+@char Rabura pos:45, time:1
+@wait 0.4
+@char Rabura.Terrified,Arms>GirlPose pos:70, easing:EaseInBounce time:1
+Rabura gingerly poked Date in the chest.<br>When she touched solid mass, she jumped back, startled.|#1c4|
+@spawn ShakeCharacter params:Rabura,,0.1,,0.7,0.5,false,true wait:false
+Rabura: W-wait, you're not...ghosts?|#1c5|
+@char Date.Mouth>Smirk
+Date: Duh. That's what we've been <i>trying</i> to tell you.|#1c6|
+Rabura: S-so… That means that this is all real,<br>and that I-I… I've been…|#1c7|
+@char Rabura.Terrified,Brow>VerySad
+Rabura: K-kidnapped...|#1c8|
+Rabura: ...|#1c9|
+@char Rabura.NormalBlush,Brow>Angry,Mouth>Sad wait:false
+@spawn ShakeCharacter params:Rabura,,0.1,,0.7,0.5,false,true wait:false
+Rabura: <shake>AND YOU TWO WERE SERIOUSLY<br>TRYING TO HIT ON ME!?</shake>|#1ca|
+@char Date.Eye>^_^,Mouth>Smile
+Date: N-no! Me?!<br>What?|#1cb|
+Sigma: You're really hot!|#1cc|
+Sigma: I couldn't resist a little bit of flirting!<br>Give me a break here!|#1cd|
+@char Rabura.Eye>SideEye,Mouth>MouthDefault
+Rabura: ...............|#1ce|
+Sigma: Older women are really sexy!|#1cf|
+@char Rabura.Thirty,Mouth>Sad
+Rabura: <shake><i>Older?!</i></shake><br>I'm not even thirty!|#1d0|
+@stopBgm AITSF_ArcaneIncantation_loop fade:3
+SigmaInternal: I... I'm going to shut up now.|#1d1|
+@wait 1.5
+Sigma: Date, we should probably focus on getting out of here<br>before Rabura kills us.|#1d2|
+Date: I like that plan.|#1d3|
+@char Rabura.Eye>Closed,Effects>NoEffect,Arms>ArmsDefault
+Rabura: Hmph.|#1d4|
+@bgm ZE_ErstwhilePlacidity_loop intro:ZE_ErstwhilePlacidity_start volume:0.7
+@char Rabura.Confused,Effects>NoEffect,Arms>GirlPose
+Rabura: So...where are we, anyway?|#1d5|
+Rabura: I heard that guy speaking over the intercom, but he didn't say anything about where we are.|#1d6|
+@char Date.Thinking
+Date: I…don't really know.|#1d7|
+Date: There's some writing on the wall, but it's not particularly helpful. I don't think it's blood, just...red.|#1d8|
+@hideChars time:1
+@back  id:ToasterLightOn scale:1 time:2
+@char Rabura.Brow>Angry,Mouth>MouthDefault wait:false
+@char Date.Normal
+Rabura: Maybe it's the work of vengeful spirits.|#1d9|
+Sigma: It could also be a clue.|#1da|
+Rabura: A clue written by a ghost?|#1db|
+Sigma: Can you stop with the stupid ghosts?|#1dc|
+@char Rabura.Thirty,Mouth>Sad,Eye>Closed,Effects>NoEffect,Arms>ArmsDefault time:1
+Rabura: Hmph.|#1dd|
+Sigma: Anyway, I tried deciphering it but I couldn't get much.|#1de|
+Sigma: I think it's an anagram.<br>The last kidnapping I was in had one, so it would make sense.|#1df|
+@char Rabura.Confused,Effects>NoEffect,Brow>BrowDefault
+Rabura: The 'last kidnapping'? Does this happen to you often?|#1e0|
+Sigma: Unfortunately.|#1e1|
+@char Rabura.Confused
+Rabura: ...|#1e2|
+Date: Let me think here...|#1e3|
+Date, Rabura, and I stared at the writing on the wall.|#1e4|
+Minutes passed as we all tried arranging letters around,<br>trying to get words that made sense <i>and</I> matched the characters.|#1e5|
+@char Date.Thinking
+Date: Okay, okay. I got one.|#1e6|
+Sigma: Hit me.|#1e7|
+Date: What about 'oil a seaman'?|#1e8|
+@char Rabura.Effects>NoEffect,Mouth>MouthDefault
+Rabura: That's not enough letters.|#1e9|
+@char Date.PornoThink
+Date: 'Oil a seaman...thirstily'?|#1ea|
+Date: Augh, it made more sense in my head...|#1eb|
+@char Date.Normal,Brow>Confused,Mouth>Frown
+Date: I wish Aiba was here. She can do this type of thing in an instant!|#1ec|
+Sigma: Or Phi. She could do this.|#1ed|
+@char Rabura.Exasperated,Effects>NoEffect
+Rabura: Or Meika...|#1ee|
+Sigma: Maybe it has something to do with the picture on the computer.|#1ef|
+@char Date.Ponder time:1
+Date: Nah, I don't think that's it.|#1f0|
+Date: We could try and see if there's a trapdoor somewhere in here.|#1f1|
+@char Rabura.Anxious
+Rabura: What if there's something dangerous in this room?|#1f2|
+Rabura: I don't know about you guys,<br>but I still can't see very well, and wandering aimlessly is a guaranteed way to...|#1f3|
+@char Rabura.Confused
+@hide Date time:1
+Rabura: Wait, what are you doing?|#1f4|
+; Use text animator to make the 'ewww' wiggle
+@sfx Mucin wait:false
+@spawn ShakePrinter params:,1,0.9,,0.1,,true,true wait:false
+Date: <wiggle>Ewwwww!</wiggle> The walls are…slimy!|#1f5|
+Rabura: ...|#1f6|
+Rabura: Huh?|#1f7|
+@char Date.Grimace,Brow>Confused time:1
+Date: The wall! It's like mucus or something. It's icky.|#1f8|
+Sigma: Icky? What are you, five?|#1f9|
+Sigma: You are so full of crap.|#1fa|
+I marched towards the walls, still coated by shadow.<br>Eventually, I felt my hand touching a solid surface.|#1fb|
+@sfx Mucin wait:false
+Unfortunately, Date was correct. The walls <i>were</i> coated in some sort of icky,<br>paint-like goop, and it was very, <i>very</i> gross.|#1fc|
+Sigma: Yuck. Oh, that's really disgusting.|#1fd|
+Sigma: Crap, I regret doing that so damn much.|#1fe|
+Date: Did you touch it?|#1ff|
+Sigma: <i>*sigh*</i> Yeah. I did.|#200|
+@back  id:MonitorOnZoom
+@hideChars time:1
+@hide ToasterLightOn
+Following the glow of the lamp, I returned to the computer, and Date joined me.|#201|
+Sigma: I'm…not doing that again.|#202|
+@char Date.Sigh pos:20,0
+Date: Yeah, same. Wasn't even one of the fun kinds of slime.|#203|
+@sfx ClothesRustle loop:false
+I dried my hand on my pants, getting as much goop off of<br>it as I could.|#204|
+@wait 2
+@char Rabura.Puzzled pos:75,0
+Rabura: Are all men this...|#205|
+Rabura paused, searching for the right word.|#206|
+@char Rabura.Eye>HalfOpen
+Rabura: Pathetic?<br>Sad?<br>Horny?|#207|
+@wait 1.5
+Rabura: Yuta...wasn't like this.|#208|
+@wait 2
+@char Rabura.Exasperated
+Rabura: Well...actually, I suppose he kind of was.|#209|
+@char Date.Smirk
+Date: I'm just like this.|#20a|
+Sigma: Yeah, this is just an 'us' thing.|#20b|
+@char Rabura.Speechless,Arms>ArmsDefault,Brow>SadBrow
+Rabura: …|#20c|
+Sigma: So, what do you think this means? Is the slime some sort of clue?|#20d|
+@char Date.Unamused,Mouth>SlightOpen,Eye>EyeDefault
+Date: Oh no. I think I know exactly what it's for.|#20e|
+@stopBgm ZE_ErstwhilePlacidity_loop fade:5
+@char Rabura.Default
+Date: Sigma, that To-Witter post…|#20f|
+Date: What if it's actually an <i>instruction?</i>|#210|
+Sigma: An instruction? To do what, exactly?|#211|
+Date: …|#212|
+@char Date.Ponder,Brow>Confused
+Date: ……………|#213|
+Sigma: Uh, Date? What is it?|#214|
+Date: What if…|#215|
+Date: W-what if the slime on the walls is actually for…|#216|
+@bgm AITSF_syuurai_loop intro:AITSF_syuurai_start volume:0.7 loop:true
+@char Rabura.Speechless,Arms>GirlPose,Brow>SadBrow
+Rabura: Oh my god. It's <i>lubricant.</i>|#217|
+Slowly, the pieces began to fall into place.<br>The more I pieced everything together,<br>the more my disbelief and horror escalated.|#218|
+The lubricant, the baguette, and the toaster…|#219|
+Sigma: You don't... You don't seriously think…?|#21a|
+Date: Yeah.|#21b|
+@char Date.Eye>-_-
+Date: I seriously think.|#21c|
+Sigma: Then the key to getting out is for us to…|#21d|
+Sigma: For us to have…|#21e|
+@spawn ShakeCamera params:,3,0.1,,0.5,,false,true wait:false
+Sigma: We need to have <i>sex?!</i>|#21f|
+@char Date.Grimace
+Date: What else could it be?|#220|
+Date: Two handsome guys trapped in a dungeon together,<br>alone, with lots of lubricant provided by a mysterious captor…|#221|
+@char Rabura.Mouth>Smile,Eye>SideEye
+Rabura: Alone…?|#222|
+Date: We've got to do it, Sigma.|#223|
+Date: That's gotta be the secret to getting off -- err, out.|#224|
+@char Date.PornoThink
+Date: Maybe the seaman that has to be oiled is me? I am quite...thirsty...|#225|
+I felt like my heart dropped into my stomach.<br>The idea of doing <i>that</i> with Date…|#226|
+@startTrans
+@camera offset:-11.2,7 rotation:0 zoom:0.92 time:0 wait:false
+@finishTrans Ripple time:2
+@wait 0.2
+@char Date.Normal,Brow>Focused
+Sure, his eyes were so pretty, and his voice was<br>unreasonably suave.<br>Yeah, fine, his jacket made me wonder what was underneath.|#227|
+@camera offset:-11.2,6 rotation:0 zoom:0.7 time:3 wait:false
+And maybe I <i>did</i> want to see if his blonde hair was as soft as it looked. But that didn't mean I wanted to…|#228|
+@blur Date power:1 time:1
+@bokeh focus:Date power:1.2
+W-with Date…|#229|
+Besides, he probably wasn't even good at kissing!|#22a|
+Wait, was Date a bottom? He <i>had</i> to be a bottom, right?|#22b|
+There was no way that this guy was a top.<br>He just <i>oozed</i> bottom energy.|#22c|
+@blur Date power:0 time:1
+I met eyes with Date, swallowing. His gaze bore into me as I felt my heart thump. His lips looked…soft.|#22d|
+@stopBgm AITSF_syuurai_loop fade:5
+; Play AITSF heartbeat sfx (SomniumFiles_Heartbeat.wav)
+Sigma: Okay. Let's…do this.|#22e|
+@char Date.BlushingBottom
+Date: Yeah. It's just to solve the puzzle. Nothing else.|#22f|
+Sigma: Right. Just to solve the puzzle.|#230|
+Sigma: Date…|#231|
+@sfx SomniumFiles_Heartbeat volume:0.7 loop:true
+Sigma: Can I…kiss you?|#232|
+@stopSfx SomniumFiles_Heartbeat
+@spawn ShakePrinter params:,2,,,0.6,,false,true wait:false
+Sigma: Not that I want to!|#233|
+Sigma: Just because it would be kind of weird if I didn't, is all?|#234|
+Sigma: You know, considering…everything.|#235|
+@char Date.Tsundere,Brow>Focused
+Date: Y-yeah.|#236|
+Date: It'd be weird if we didn't. That's the only reason.|#237|
+@sfx SomniumFiles_Heartbeat volume:0.7 loop:false
+I licked my lips, feeling my heart pounding in my chest.|#238|
+As I closed my eyes, I could feel the comforting heat of Date's breath in this cold darkness.|#239|
+@stopSfx SomniumFiles_Heartbeat
+@camera offset:-11.2,6 rotation:0 zoom:0.85 time:6 wait:false
+@char Date.Kiss,Eye>-_-,Mouth>Agape
+But…|#23a|
+@blur Date power:1 time:1
+@char Rabura.Speechless
+Just as my lips were about to meet Date's in a<br>display of hot, guy-on-guy, puzzle-solving action…|#23b|
+# RaburaInterrupts
+@camera offset:0,0 zoom:0 time:0.3
+@blur Date power:0
+@spawn ShakeCamera wait:false
+Rabura: What the <i>hell</i> are you two doing?!|#23c|
+@bgm AITSF_yakusai_loop intro:AITSF_yakusai_start volume:0.7
+I opened my eyes.|#23d|
+Rabura was glowering at me and Date,<br>brow furrowed, with her hands on her hips.<br>She looked like she was about to combust.|#23e|
+@char Date.Eye>EyeDefault,Mouth>Frown,Brow>Confused
+Date: We're solving the puzzle. Isn't it obvious?|#23f|
+@char Rabura.Effects>BlushAndSweat,Mouth>Sad
+Rabura: What the hell part of the puzzle involves <i>this</i>?!|#240|
+Rabura: You just wanted me to watch you, didn't you?<br>You guys are perverts!|#241|
+; unused - Rabura: Even Yuta wasn't <i>this</i> obnoxious!
+@char Date.PornoMag
+Date: I plead the fifth.|#242|
+@wait 1.5
+Sigma: But Date, you're Japanese.|#243|
+@char Rabura.Puzzled
+Rabura: Oh, for the love of…|#244|
+@bokeh dist:0 power:0 time:1
+Rabura pointed, so I followed her gaze.<br>She was pointing at the…|#245|
+The baguette…|#246|
+Oh. <i>Oh.</i>|#247|
+Date: Shit, I forgot about that.|#248|
+Rabura: That picture on the computer<br>is <i>clearly</i> telling you to put that baguette up your ass.|#249|
+Sigma: It was…literal. We literally have to put a baguette up our ass.|#24a|
+Rabura: Uh, duh.|#24b|
+Rabura: I don't know if it matters or not who does it,<br>but that's obviously what the lubricant is for.|#24c|
+Date: Well, I'm not doing it. That's just not hygienic.|#24d|
+Sigma: Oh, <i>now</i> he cares about hygiene.|#24e|
+@char Date.Grimace
+Date: I always did! It just wasn't relevant!|#24f|
+Sigma: Well, I'm not doing it.<br>I've never stuck anything up there and I'm sure<br>as hell not going to let a piece of <i>bread</i> be the first thing I try.|#250|
+Me and Date both stared at Rabura.|#251|
+@char Rabura.Mouth>Talk2
+Rabura: I'm not letting a fucking <i>loaf of bread</i> take my virginity.|#252|
+Rabura: Besides, who knows what kind of bacteria is in that thing?|#253|
+@char Date.BlushingBottom
+Date: You're a virgin?|#254|
+Sigma: You mean it'd be the first time for your ass, or...|#255|
+@char Rabura.NormalBlush
+Rabura: …|#256|
+@char Rabura.Thirty,Mouth>Sad transition:CrossFade time:0.2
+Rabura: Ah… U-um, you didn't hear anything.|#257|
+@char Date.PornoThink
+Date: No, no.|#258|
+Date: I'm pretty sure you said that you were a-|#259|
+
+
+# Pepsiman
+@stopBgm AITSF_yakusai_loop fade:2
+Before Date could finish,<br>he was interrupted by a strange, booming voice.|#25a|
+@hideAll remove:true
+@back  id:MainBackground
+@set Pepsiman="???"
+Pepsiman: Did I hear someone in need of a hero?|#25b|
+@back  id:PepsimanSpotlight
+@char Pepsiman.Shadow
+@set Pepsiman="???"
+Pepsiman: Hello, boys. Rabura.|#25c|
+@char Pepsiman.Normal
+; BG of Pepsiman with spotlight is shown.
+@bgm Pepsiman_loop intro:Pepsiman_start volume:0.5 loop:true
+@char Rabura.Smile,Mouth>Agape pos:80,-10
+Rabura: Hey, Pepsiman.|#25d|
+@set Pepsiman="Pepsiman"
+@char Date.Normal,Brow>Confused,Mouth>SlightOpen pos:18,-5
+Date: You <i>know</i> this weirdo?!|#25e|
+Sigma: Oh, for crying out…|#25f|
+Sigma: How many people are hidden in this room!?|#260|
+@sfx Pepsiman_pshaw loop:false
+Pepsiman: Greetings, gentlemen.|#261|
+Pepsiman: Now, about that baguette you needed to shove up someone's ass…|#262|
+; Zoom in on Pepsiman. Show a glimmer in his eye(?)
+@char Pepsiman.Sparkle transition:CloudReveal time:1
+; Quickly cut/wipe to black.
+Pepsiman: I humbly volunteer.|#263|
+@hideAll remove:true
+@back  pos:200,140 id:BGTwitter scale:4 time:1 wait:false
+@sfx BreadCrunch
+@wait 1
+@sfx ClothesRustle
+Pepsiman: Urk…|#264|
+@sfx Zipper
+Pepsiman: Almost there, and…|#265|
+Pepsiman: …|#266|
+Date: …|#267|
+@back  id:ToasterLightOn
+@hide BGTwitter
+Sigma: Did it…work?|#268|
+@sfx Impact
+@spawn ShakeCamera params:,18,,,0.2,,false,true wait:false
+@char Rabura.Smile,Mouth>Agape,Eye>Pleased pos:,-10
+Rabura: Hey, the door's opening! I see light!|#269|
+Sigma: Yes!|#26a|
+@char Pepsiman
+Pepsiman: Quickly, everyone! Through the doorway, before it shuts!|#26b|
+@stopBgm Pepsiman_loop fade:2
+@hideChars
+@back  id:MainBackground
+@startTrans
+; Fade to a bright white/light in the BG
+@goto ScriptEnding

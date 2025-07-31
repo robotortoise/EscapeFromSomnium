@@ -1,0 +1,406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2cdf0df4ee3a01488d71a4f9583fdaf, type: 3}
+  m_Name: BackgroundsConfiguration
+  m_EditorClassIdentifier: 
+  DefaultDuration: 0.35
+  DefaultEasing: 0
+  AutoShowOnModify: 1
+  SceneOrigin: {x: 0.5, y: 0}
+  ZOffset: 100
+  ZStep: 0.1
+  DefaultMetadata:
+    Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Loader:
+      PathPrefix: Backgrounds
+      ProviderTypes:
+      - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    guid: 429f7e76-9cd4-49d6-848e-8a5a0ebe9a50
+    customData:
+      rid: -2
+    Pivot: {x: 0.5, y: 0.5}
+    PixelsPerUnit: 100
+    EnableDepthPass: 1
+    DepthAlphaCutoff: 0.5
+    CustomTextureShader: {fileID: 0}
+    CustomSpriteShader: {fileID: 0}
+    RenderTexture: {fileID: 0}
+    RenderRectangle:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    MatchMode: 0
+    CustomMatchRatio: 0
+    Poses: []
+  Metadata:
+    ids:
+    - MainBackground
+    - MonitorOnAndDim
+    - SigmaArm
+    - MonitorOnZoom
+    - MonitorOffAndDim
+    - SigmaWakes
+    - FullyDark
+    - ToasterLightOn
+    - BGTitle
+    - BGTwitter
+    - PepsimanSpotlight
+    - AllLightsOnBG
+    metas:
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 34780d51-03d4-4bd7-9c54-b6d0efdcabc3
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 5c163d60-5e54-4ce3-bf3d-2f872b859958
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: b5df4663-20fc-4d60-90fd-b0d7bb2be347
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 526fae5d-4333-4c4a-90b3-e38306fcf976
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: f7b257ac-a3d1-4ced-b0b5-4c76484a8e47
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 335f359a-4acf-4e4f-b2d4-0cb997ed33f5
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: e8c2e670-0d7a-4e67-9463-09cc1e42c3d2
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: a0906767-dfaf-4f5d-8c5e-f3d85764ef7a
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 8d99da47-069b-4ba6-8d7a-8f0ad37bd73e
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: d2215d87-e1fc-4e91-8269-c1d1117f5221
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 9ded0a61-eecd-45ca-bfc3-13bf7c08d9ea
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 88963566-84c5-4492-bf96-eef4b82f4bf1
+      customData:
+        rid: -2
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomTextureShader: {fileID: 0}
+      CustomSpriteShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      RenderRectangle:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      MatchMode: 0
+      CustomMatchRatio: 0
+      Poses: []
+  SharedPoses: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
