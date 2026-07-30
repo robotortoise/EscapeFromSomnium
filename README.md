@@ -1,4 +1,7 @@
 # Escape From Somnium
+
+Licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 With permission from Tamafry, @robotortoise (me), and Peach, we're releasing Escape From Somnium and all its assets under a CC BY-NC license. This means you're free to remix, reuse, and rework any of the inside properties or poke around with the source code — as long as you credit us. Obviously, the characters as well as the music tracks are not under this copyright, but the writing itself as well as the art is available to remix.
 
 To build Escape From Somnium, you'll need:
