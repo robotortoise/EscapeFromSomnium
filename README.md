@@ -4,7 +4,7 @@ With permission from Tamafry, @robotortoise (me), and Peach, we're releasing Esc
 To build Escape From Somnium, you'll need:
 - Unity 2023 or later
 - Naninovel 1.22
-- Text Animator 2.0 (or newer)for Unity By Febucci
+- Text Animator 2.0 (or newer) for Unity By Febucci
 The latter two plugins are paid, but I highly HIGHLY recommend them. I love supporting independent developers, so you should, too! That being said, the game will build without Text Animator if you just remove the Text Animator component from the backlog and the printers under Assets\TextPrinters
 
 [Escape From Somnium is playable on Itch.io.](https://tamafry.itch.io/escape-from-somnium)
